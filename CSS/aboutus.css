@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "titulos";
+  src: url(./Fuentes-colores/Rye-Regular.ttf);
+}
+
+@font-face {
+  font-family: "navbar";
+  src: url(./Fuentes-colores/Shojumaru-Regular.ttf);
+}
+
+@font-face {
+  font-family: "subtitulo";
+  src: url(./Fuentes-colores/RubikGlitch-Regular.ttf);
+}
+
+@font-face {
+  font-family: "text-body";
+  src: url(./Fuentes-colores/PermanentMarker-Regular.ttf);
+}
+
+body {
+  background-image: url(./imagenes/background-main2.jpg);
+  background-size: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  backdrop-filter: blur(5px);
+}
+
+img:hover {
+  transform: scale(1.15);
+  transition-duration: 2s;
+}
+
+.card-body {
+  background-color: -webkit-linear-gradient(
+    to bottom,
+    #076df2,
+    #034aa6,
+    #021f59
+  );
+  background: linear-gradient(to bottom, #076df2, #034aa6, #021f59);
+}
+
+.card-text {
+  color: #fff;
+  font-family: sans-serif;
+  font-size: large;
+}
+
+.imangen-card {
+  width: 100%;
+  padding: 1rem 0rem 1rem 0rem;
+  margin-top: 15rem;
+}
+.card-title {
+  font-size: 2.5rem;
+}
+
+@media (max-width: 1290px) {
+  body {
+    background-image: url(./imagenes/background-main2.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+  }
+}
+
+.cards-integrantes {
+  margin-top: 5rem;
+}
