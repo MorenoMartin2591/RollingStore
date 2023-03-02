@@ -5,10 +5,10 @@
 }
 
 .navbar {
-  background-color: #223C60 !important;
+  background: linear-gradient(to right, #ccc, #123456);
   justify-content: center;
   align-items: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: bolder;
 }
 
@@ -16,13 +16,13 @@
   display: flex;
 }
 
-body {
+.imglogo body {
   position: relative;
   padding-bottom: 9rem;
 }
 
 .footer {
-  background-color:  #223C60 !important;
+  background-color: #223c60 !important;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -35,13 +35,12 @@ body {
 }
 
 .footer p {
-  color: #D6DDE0;
-  font-family: 'Poppins', sans-serif;
+  color: #d6dde0;
+  font-family: "Poppins", sans-serif;
   font-weight: bolder;
 }
 
 .iconos a {
   margin: 5px;
-  color: #D6DDE0;
+  color: #d6dde0;
 }
-
