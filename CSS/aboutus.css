@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: "Titulos";
-  src: url(/paginas/PressStart2P-Regular.ttf);
+  src: url(/Multimedia/PressStart2P-Regular.ttf);
 }
 
 @font-face {
@@ -15,7 +15,7 @@
 }
 
 body {
-  background-image: url(imagenes/background-main2.jpg);
+  background-image: url(/Multimedia/img-about/background-main2.jpg);
   background-size: cover;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -27,7 +27,7 @@ body {
 .contenedor-titulo {
   position: relative;
   height: 30vh;
-  background-image: url(imagenes/banner.jpg);
+  background-image: url(/Multimedia/img-about/banner.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -149,7 +149,7 @@ img:hover {
 
 @media (max-width: 1290px) {
   body {
-    background-image: url(imagenes/background-main2.jpg);
+    background-image: url(/Multimedia/img-about/background-main2.jpg);
     background-size: cover;
     height: 100vh;
     background-attachment: fixed;
