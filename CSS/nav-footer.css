@@ -12,6 +12,20 @@
   font-weight: bolder;
 }
 
+.navbar-inf div {
+  background: linear-gradient(to left, #ccc, #123456);
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+}
+
+.navbar-inf div ul li {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+}
+
 .containerGeneral {
   display: flex;
 }
@@ -22,7 +36,7 @@
 }
 
 .footer {
-  background-color: #223c60 !important;
+  background: linear-gradient(to left, #ccc, #123456);
   position: absolute;
   bottom: 0;
   width: 100%;
