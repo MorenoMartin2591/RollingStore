@@ -1,15 +1,380 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RollingStore</title>
+
+    <link rel="stylesheet" type="text/css" href="../CSS/index.css" />
+    <link rel="stylesheet" href="../CSS/nav-footer.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
 </head>
 
-<body>
 
+<body class="conteiner-general">
+    <header>
+        <!--Navbar Superior-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger m-1">
+            <div class="container-fluid navbar-sup">
+                <div class="col col-4">
+                    <a href="../index.html" class="m-3">
+                        <img src="/Multimedia/img-about/Logo Ecommerce.png" class="imgLogo" alt="" width="50"
+                            height="50" />
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse col-4" id="navbarSupportedContent">
+                    <form class="d-flex col-12">
+                        <input class="form-control me-2 w-75" type="search" placeholder="Buscar producto"
+                            aria-label="Search" />
+                        <button class="btn btn-success" type="submit">
+                            Buscar
+                        </button>
+                    </form>
+                </div>
+
+                <div class="col-4">
+                    <ul class="list">
+                        <li class="nav-item">
+                            <a href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">Registro</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">Carrito</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--NavbaR Superior-->
+
+        <!--Navbar Inferior-->
+        <nav class="navbar-inf navbar-expand-lg navbar-dark bg-danger m-1">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav fs-5">
+                        <li class="fs-5">
+                            <img src="/Multimedia/img-nav-footer/celu.svg" style="height: 5rem;" alt="" />
+                            <a class="dropdown-item text-white" href="catalogosamsung.html">Samsung</a>
+                        </li>
+                        <li class="fs-5">
+                            <img src="/Multimedia/img-nav-footer/celu.svg" style="height: 5rem;" alt="" />
+                            <a class="dropdown-item text-white" href="catalogoxiaomi.html">Xiaomi</a>
+                        <li class="fs-5">
+                            <img src="/Multimedia/img-nav-footer/celu.svg" style="height: 5rem;" alt="" />
+                            <a class="dropdown-item text-white" href="catalogomotorola.html">Motorolla</a>
+                        </li>
+                        <li class="fs-5">
+                            <img src="/Multimedia/img-nav-footer/gadget.svg" style="height: 5rem;" alt="" />
+                            <a class="dropdown-item text-white" href="catalogoaccesorios.html">Accesorios</a>
+                        </li>
+                        <li class="fs-5">
+                            <img src="/Multimedia/img-nav-footer/celu.svg" style="height: 5rem;" alt="" />
+                            <a class="dropdown-item text-white" href="aboutus.html">Acerca de nosotros</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--Navbar Inferior-->
+    </header>
+    <!-- INICIO DE LA SECCION PRINCIPAL-->
+    <section class="section-destacado m-3 mt-5">
+        <div class="section-titulo">
+            <p class="text-uppercase fs-1 text-center mb-4">motorola</p>
+        </div>
+        <!--INICIO CARD_1 CELULARES MOTOROLA-->
+        <div class="card-group">
+            <!--INICIO CARD MOTOROLA E32-->
+            <div class="card m-1 rounded-1">
+                <img src="../Multimedia/img-section/Celulares/Motorola/moto E32.webp" class="card-img-top border-bottom"
+                    alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Celular Libre Motorola E32</h5>
+                </div>
+                <div class="card-body d-flex justify-content-evenly">
+                    <div class="card-body-preciomt text-primary">
+                        <h5 class="card-title text-center">PRECIO MT</h5>
+                        <h5 class="card-title text-center">$51.551</h5>
+                    </div>
+                    <div class="card-body-preciolista border-start">
+                        <h6 class="card-title text-center ms-3">PRECIO LISTA</h6>
+                        <h6 class="card-title text-center ms-3">$56.649</6>
+                    </div>
+                </div>
+                <div class="card-body-cuotas">
+                    <h6 class="card-title text-center">6 cuotas sin interes de $9.441,50</h6>
+                </div>
+                <div class="card-body-button d-flex justify-content-evenly p-1">
+                    <button type="button" class="btn btn-primary col-5">COMPRAR</button>
+                    <button type="button" class="btn btn-secondary col-5">VER</button>
+                </div>
+            </div>
+            <!--FIN CARD MOTOROLA E32-->
+
+            <!--INICIO CARD MOTOROLA E22-->
+            <div class="card m-1 rounded-1">
+                <img src="../Multimedia/img-section/Celulares/Motorola/motorola E22.webp"
+                    class="card-img-top border-bottom" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Celular Libre Motorola E22</h5>
+                </div>
+                <div class="card-body d-flex justify-content-evenly">
+                    <div class="card-body-preciomt text-primary">
+                        <h5 class="card-title text-center">PRECIO MT</h5>
+                        <h5 class="card-title text-center">$46.045</h5>
+                    </div>
+                    <div class="card-body-preciolista border-start">
+                        <h6 class="card-title text-center ms-3">PRECIO LISTA</h6>
+                        <h6 class="card-title text-center ms-3">$50.599</6>
+                    </div>
+                </div>
+                <div class="card-body-cuotas">
+                    <h6 class="card-title text-center">6 cuotas sin interes de $8.422,17</h6>
+                </div>
+                <div class="card-body-button d-flex justify-content-evenly p-1">
+                    <button type="button" class="btn btn-primary col-5">COMPRAR</button>
+                    <button type="button" class="btn btn-secondary col-5">VER</button>
+                </div>
+            </div>
+            <!--FIN CARD MOTOROLA E22-->
+
+            <!--INICIO CARD MOTOROLA E22I-->
+            <div class="card m-1 rounded-1">
+                <img src="../Multimedia/img-section/Celulares/Motorola/motorola e22i.webp"
+                    class="card-img-top border-bottom" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Celular Libre Motorola E22i</h5>
+                </div>
+                <div class="card-body d-flex justify-content-evenly">
+                    <div class="card-body-preciomt text-primary">
+                        <h5 class="card-title text-center">PRECIO MT</h5>
+                        <h5 class="card-title text-center">$42.542</h5>
+                    </div>
+                    <div class="card-body-preciolista border-start">
+                        <h6 class="card-title text-center ms-3">PRECIO LISTA</h6>
+                        <h6 class="card-title text-center ms-3">$46.749</6>
+                    </div>
+                </div>
+                <div class="card-body-cuotas">
+                    <h6 class="card-title text-center">6 cuotas sin interes de $7.791,50</h6>
+                </div>
+                <div class="card-body-button d-flex justify-content-evenly p-1">
+                    <button type="button" class="btn btn-primary col-5">COMPRAR</button>
+                    <button type="button" class="btn btn-secondary col-5">VER</button>
+                </div>
+            </div>
+            <!--FIN CARD MOTOROLA E22I-->
+
+            <!--INICIO CARD MOTOROLA G32-->
+            <div class="card m-1 rounded-1">
+                <img src="../Multimedia/img-section/Celulares/Motorola/motorola G22.jpg"
+                    class="card-img-top border-bottom" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Celular Libre Motorola G32</h5>
+                </div>
+                <div class="card-body d-flex justify-content-evenly">
+                    <div class="card-body-preciomt text-primary">
+                        <h5 class="card-title text-center">PRECIO MT</h5>
+                        <h5 class="card-title text-center">$70.570</h5>
+                    </div>
+                    <div class="card-body-preciolista border-start">
+                        <h6 class="card-title text-center ms-3">PRECIO LISTA</h6>
+                        <h6 class="card-title text-center ms-3">$77.549</6>
+                    </div>
+                </div>
+                <div class="card-body-cuotas">
+                    <h6 class="card-title text-center">6 cuotas sin interes de $12.924,83</h6>
+                </div>
+                <div class="card-body-button d-flex justify-content-evenly p-1">
+                    <button type="button" class="btn btn-primary col-5">COMPRAR</button>
+                    <button type="button" class="btn btn-secondary col-5">VER</button>
+                </div>
+            </div>
+            <!--FIN CARD MOTOROLA G32-->
+        </div>
+        <!--FIN CARD CELULARES DESTACADOS-->
+    </section>
+    <!--FIN CARD_1 CELULARES MOTOROLA-->
+
+    <section class="section-novedades m-3 mt-5">
+        <!--INICIO CARD_1 CELULARES MOTOROLA-->
+        <div class="card-group">
+            <div class="card m-1 rounded-1">
+
+                <!--INICIO CARD MOTOROLA EDGE30-->
+                <img src="../Multimedia/img-section/Celulares/Motorola/motorola Edge 30.webp"
+                    class="card-img-top border-bottom " alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Celular Libre Motorola Edge 30</h5>
+                </div>
+                <div class="card-body d-flex justify-content-evenly">
+                    <div class="card-body-preciomt text-primary">
+                        <h5 class="card-title text-center">PRECIO MT</h5>
+                        <h5 class="card-title text-center">$120.119</h5>
+                    </div>
+                    <div class="card-body-preciolista border-start">
+                        <h6 class="card-title text-center ms-3">PRECIO LISTA</h6>
+                        <h6 class="card-title text-center ms-3">$131.999</6>
+                    </div>
+                </div>
+                <div class="card-body-cuotas">
+                    <h6 class="card-title text-center">6 cuotas sin interes de $21.999,83</h6>
+                </div>
+                <div class="card-body-button d-flex justify-content-evenly p-1">
+                    <button type="button" class="btn btn-primary col-5">COMPRAR</button>
+                    <button type="button" class="btn btn-secondary col-5">VER</button>
+                </div>
+            </div>
+            <!--FIN CARD MOTOROLA EDGE30-->
+
+            <!--INICIO CARD MOTOROLA G42-->
+            <div class="card m-1 rounded-1">
+                <img src="../Multimedia/img-section/Celulares/Motorola/motog42.webp" class="card-img-top border-bottom"
+                    alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Celular Libre Motorola G42</h5>
+                </div>
+                <div class="card-body d-flex justify-content-evenly">
+                    <div class="card-body-preciomt text-primary">
+                        <h5 class="card-title text-center">PRECIO MT</h5>
+                        <h5 class="card-title text-center">$75.074</h5>
+                    </div>
+                    <div class="card-body-preciolista border-start">
+                        <h6 class="card-title text-center ms-3">PRECIO LISTA</h6>
+                        <h6 class="card-title text-center ms-3">$82.499</6>
+                    </div>
+                </div>
+                <div class="card-body-cuotas">
+                    <h6 class="card-title text-center">6 cuotas sin interes de $13.749,83</h6>
+                </div>
+                <div class="card-body-button d-flex justify-content-evenly p-1">
+                    <button type="button" class="btn btn-primary col-5">COMPRAR</button>
+                    <button type="button" class="btn btn-secondary col-5">VER</button>
+                </div>
+            </div>
+            <!--FIN CARD MOTOROLA G42-->
+
+            <!--INICIO CARD MOTOROLA EDGE 30 NEO-->
+            <div class="card m-1 rounded-1">
+                <img src="../Multimedia/img-section/Celulares/Motorola/motorola Egge 30 NEO.webp"
+                    class="card-img-top border-bottom" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Celular Libre Motorola Edge 30 Neo</h5>
+                </div>
+                <div class="card-body d-flex justify-content-evenly">
+                    <div class="card-body-preciomt text-primary">
+                        <h5 class="card-title text-center">PRECIO MT</h5>
+                        <h5 class="card-title text-center">$128.127</h5>
+                    </div>
+                    <div class="card-body-preciolista border-start">
+                        <h6 class="card-title text-center ms-3">PRECIO LISTA</h6>
+                        <h6 class="card-title text-center ms-3">$140.799</6>
+                    </div>
+                </div>
+                <div class="card-body-cuotas">
+                    <h6 class="card-title text-center">6 cuotas sin interes de $23.466,50</h6>
+                </div>
+                <div class="card-body-button d-flex justify-content-evenly p-1">
+                    <button type="button" class="btn btn-primary col-5">COMPRAR</button>
+                    <button type="button" class="btn btn-secondary col-5">VER</button>
+                </div>
+            </div>
+            <!--FIN CARD MOTOROLA EDGE 30 NEO-->
+
+            <!--INICIO CARD MOTOROLA E20-->
+            <div class="card m-1 rounded-1">
+                <img src="../Multimedia/img-section/Celulares/Motorola/moto E20.jpg" class="card-img-top border-bottom"
+                    alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Celular Libre Motorola E20</h5>
+                </div>
+                <div class="card-body d-flex justify-content-evenly">
+                    <div class="card-body-preciomt text-primary">
+                        <h5 class="card-title text-center">PRECIO MT</h5>
+                        <h5 class="card-title text-center">$32.759</h5>
+                    </div>
+                    <div class="card-body-preciolista border-start">
+                        <h6 class="card-title text-center ms-3">PRECIO LISTA</h6>
+                        <h6 class="card-title text-center ms-3">$35.999</6>
+                    </div>
+                </div>
+                <div class="card-body-cuotas">
+                    <h6 class="card-title text-center">6 cuotas sin interes de $35.999</h6>
+                </div>
+                <div class="card-body-button d-flex justify-content-evenly p-1">
+                    <button type="button" class="btn btn-primary col-5">COMPRAR</button>
+                    <button type="button" class="btn btn-secondary col-5">VER</button>
+                </div>
+            </div>
+            <!--FIN CARD MOTOROLA E20-->
+        </div>
+        <!--FIN CARD CELULARES NOVEDADES-->
+        </div>
+    </section>
+    <!--FIN DE SECCION CELULARES NOVEDADES-->
+
+    <!--INICIO DE FOOTER-->
+    <footer class="footer">
+        <h3>Todos los derechos reservados - 2023</h3>
+        <div class="iconos container-fluid d-flex justify-content-evenly">
+            <div class="footer-menu">
+                <ul>
+                    <li class="col-2 m-2">
+                        <a class="dropdown-item text-white" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="col-2 m-2">
+                        <a class="dropdown-item text-white" href="./aboutus.html">Sobre Nosotros</a>
+                    </li>
+                    <li class="col-2 m-2">
+                        <a class="dropdown-item text-white" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-ubicacion">
+                <ul class="footer-icons">
+                    <li>
+                        <p>Ubicación
+                        <p>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3553.076081752743!2d-65.40737637246593!3d-27.05934632889694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94224be05e143b65%3A0x9216e72d647bf71d!2sHip%C3%B3lito%20Yrigoyen%20340%2C%20T4132BBF%20Famaill%C3%A1%2C%20Tucum%C3%A1n!5e0!3m2!1ses-419!2sar!4v1677848943752!5m2!1ses-419!2sar"
+                                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-redes">
+                <ul class="footer-icons container-fluid">
+                    <li class="col-2 m-2">
+                        <a class="dropdown-item text-white" href="#"><img src="/Multimedia/img-nav-footer/instagram.png"
+                                style="height: 3rem;" alt="" />Instagram</a>
+                    </li>
+                    <li class="col-2 m-2">
+                        <a class="dropdown-item text-white" href="#"><img
+                                src="/Multimedia/img-nav-footer/whatsapp-logo-2.png" style="height: 3rem;"
+                                alt="" />Whatsapp</a>
+                    </li>
+                    <li class="col-2 m-2">
+                        <a class="dropdown-item text-white" href="#"> <img
+                                src="/Multimedia/img-nav-footer/Twitter-logo.png" style="height: 3rem;"
+                                alt="" />Twitter</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!--FIN DE FOOTER-->
 </body>
 
 </html>
