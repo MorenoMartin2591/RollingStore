@@ -1,15 +1,478 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RollingStore</title>
+
+  <link rel="stylesheet" type="text/css" href="./CSS/index.css" />
+  <link rel="stylesheet" href="/CSS/nav-footer.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+
 </head>
 
-<body>
+<body class="conteiner-general">
+  <header>
+    <!--Navbar Superior-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger m-1">
+      <div class="container-fluid">
+        <div class="col col-4">
+          <a href="" class="m-3">
+            <img src="/Multimedia/img-about/Logo Ecommerce.png" class="imgLogo" alt="" width="50" height="50" />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
 
+        <div class="collapse navbar-collapse col-4" id="navbarSupportedContent">
+          <form class="d-flex col-12">
+            <input class="form-control me-2 w-75" type="search" placeholder="Buscar producto" aria-label="Search" />
+            <button class="btn btn-success" type="submit">
+              Buscar
+            </button>
+          </form>
+        </div>
+
+        <div class="col col-4">
+          <ul class="d-flex justify-content-around">
+            <li class="nav-item">
+              <a href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a href="#">Registro</a>
+            </li>
+            <li class="nav-item">
+              <a href="#">Carrito</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--NavbaR Superior-->
+
+    <!--Navbar Inferior-->
+    <nav class="navbar-inf navbar-expand-lg navbar-dark bg-danger m-1">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav fs-5">
+            <li class="fs-5 col-2 m-2">
+              <img src="/Multimedia/img-nav-footer/celu.svg" style="height: 5rem;" alt="" />
+              <a class="dropdown-item text-white" href="#">Apple</a>
+            </li>
+            <li class="fs-5 col-2 m-2">
+              <img src="/Multimedia/img-nav-footer/celu.svg" style="height: 5rem;" alt="" />
+              <a class="dropdown-item text-white" href="#">Samsung</a>
+            </li>
+            <li class="fs-5 col-2 m-2">
+              <img src="/Multimedia/img-nav-footer/celu.svg" style="height: 5rem;" alt="" />
+              <a class="dropdown-item text-white" href="#">Xiaomi</a>
+            <li class="fs-5 col-2 m-2">
+              <img src="/Multimedia/img-nav-footer/celu.svg" style="height: 5rem;" alt="" />
+              <a class="dropdown-item text-white" href="#">Motorolla</a>
+            </li>
+            <li class="fs-5 col-2 m-2">
+              <img src="/Multimedia/img-nav-footer/gadget.svg" style="height: 5rem;" alt="" />
+              <a class="dropdown-item text-white" href="#">Accesorios</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Navbar Inferior-->
+  </header>
+
+  <!-- INICIO DE LA SECCION PRINCIPAL-->
+  <section id="section-carrucel">
+    <div class="container-fluid">
+      <!--INICIO DEL CARRUSEL-->
+      <div class="slider row mb-3">
+        <div class="col-12 mt-3">
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <!--INICIO DE BOTONES DEL CARRUSEL-->
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                aria-label="Slide 5"></button>
+            </div>
+            <!--FIN DE BOTONES DEL CARRUSEL-->
+
+            <!-- INICIO DE IMAGENES DEL CARRUSEL -->
+            <div class="carousel-inner">
+              <!--INICIO IMAGEN MERCADO PAGO-->
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="./Multimedia/img-section/Carrucel/MP.webp" class="d-block w-100" alt="..." />
+              </div>
+              <!--FIN IMAGEN MERCADO PAGO-->
+
+              <!--INICIO IMAGEN SAMSUNG-->
+              <div class="carousel-item" data-bs-interval="10000">
+                <img src="./Multimedia/img-section/Carrucel/samsung.webp" class="d-block w-100" alt="..." />
+              </div>
+              <!--INICIO IMAGEN SAMSUNG-->
+
+              <!--INICIO IMAGEN XIAOMI-->
+              <div class="carousel-item" data-bs-interval="10000">
+                <img src="./Multimedia/img-section/Carrucel/xiaomi.webp" class="d-block w-100" alt="..." />
+              </div>
+              <!--FIN IMAGEN XIAOMI-->
+
+              <!--INICIO IMAGEN MOTOROLA-->
+              <div class="carousel-item" data-bs-interval="10000">
+                <img src="./Multimedia/img-section/Carrucel/motorola.webp" class="d-block  w-100" alt="..." />
+              </div>
+              <!--FIN IMAGEN MOTOROLA-->
+
+              <!--INICIO IMAGEN ACCESORIOS-->
+              <div class="carousel-item" data-bs-interval="10000">
+                <img src="./Multimedia/img-section/Carrucel/accesorios.webp" class="d-block w-100" alt="..." />
+              </div>
+              <!--FIN IMAGEN ACCESORIOS-->
+            </div>
+            <!-- FIN IMAGENES DEL CARRUSEL -->
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!--FIN DEL CARRUSEL-->
+
+
+  <!--INICIO DE SECCION CELULARES DESTACADOS-->
+  <section class="section-destacado m-3 mt-5">
+    <div class="section-titulo">
+      <p class="text-uppercase fs-1 text-center mb-4">destacado</p>
+    </div>
+    <!--INICIO CARD CELULARES DESTACADOS-->
+    <div class="card-group">
+      <!--INICIO CARD MOTOROLA E20-->
+      <div class="card m-1 rounded-1">
+        <img src="./Multimedia/img-section/Celulares/Motorola/moto E20.jpg" class="card-img-top border-bottom"
+          alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-center">Celular Libre Motorola E20</h5>
+        </div>
+        <div class="card-body d-flex justify-content-evenly">
+          <div class="card-body-preciomt text-primary">
+            <h5 class="card-title text-center">PRECIO MT</h5>
+            <h5 class="card-title text-center">$32.759</h5>
+          </div>
+          <div class="card-body-preciolista border-start">
+            <h6 class="card-title text-center ms-3">PRECIO LISTA</h6>
+            <h6 class="card-title text-center ms-3">$35.999</6>
+          </div>
+        </div>
+        <div class="card-body-cuotas">
+          <h6 class="card-title text-center">6 cuotas sin interes de $5.999,83</h6>
+        </div>
+        <div class="card-body-button d-flex justify-content-evenly p-1">
+          <button type="button" class="btn btn-primary col-5">COMPRAR</button>
+          <button type="button" class="btn btn-secondary col-5">VER</button>
+        </div>
+      </div>
+      <!--FIN CARD MOTOROLA E20-->
+
+      <!--INICIO CARD GALAXY A03-->
+      <div class="card m-1 rounded-1">
+        <img src="./Multimedia/img-section/Celulares/Samsung/samsung galaxy A03 CORE.jpg"
+          class="card-img-top border-bottom" alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-center">Celular Libre Samsung Galaxy A03 Core</h5>
+        </div>
+        <div class="card-body d-flex justify-content-evenly">
+          <div class="card-body-preciomt text-primary">
+            <h5 class="card-title text-center">PRECIO MT</h5>
+            <h5 class="card-title text-center">$41.040</h5>
+          </div>
+          <div class="card-body-preciolista border-start">
+            <h6 class="card-title text-center ms-3">PRECIO LISTA</h6>
+            <h6 class="card-title text-center ms-3">$45.099</6>
+          </div>
+        </div>
+        <div class="card-body-cuotas">
+          <h6 class="card-title text-center">6 cuotas sin interes de $7.515,50</h6>
+        </div>
+        <div class="card-body-button d-flex justify-content-evenly p-1">
+          <button type="button" class="btn btn-primary col-5">COMPRAR</button>
+          <button type="button" class="btn btn-secondary col-5">VER</button>
+        </div>
+      </div>
+      <!--FIN CARD GALAXY A03-->
+
+      <!--INICIO CARD GALAXY A23-->
+      <div class="card m-1 rounded-1">
+        <img src="./Multimedia/img-section/Celulares/Samsung/samsung galaxy A23.jpg" class="card-img-top border-bottom"
+          alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-center">Celular Libre Samsung Galaxy A23</h5>
+        </div>
+        <div class="card-body d-flex justify-content-evenly">
+          <div class="card-body-preciomt text-primary">
+            <h5 class="card-title text-center">PRECIO MT</h5>
+            <h5 class="card-title text-center">$85.539</h5>
+          </div>
+          <div class="card-body-preciolista border-start">
+            <h6 class="card-title text-center ms-3">PRECIO LISTA</h6>
+            <h6 class="card-title text-center ms-3">$93.999</6>
+          </div>
+        </div>
+        <div class="card-body-cuotas">
+          <h6 class="card-title text-center">6 cuotas sin interes de $15.666,50</h6>
+        </div>
+        <div class="card-body-button d-flex justify-content-evenly p-1">
+          <button type="button" class="btn btn-primary col-5">COMPRAR</button>
+          <button type="button" class="btn btn-secondary col-5">VER</button>
+        </div>
+      </div>
+      <!--FIN CARD GALAXY A23-->
+
+      <!--INICIO CARD XIAOMI REDMI NOTE 11-->
+      <div class="card m-1 rounded-1">
+        <img src="./Multimedia/img-section/Celulares/Xiaomi/xiaomi Redmi Note 11.webp"
+          class="card-img-top border-bottom" alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-center">Celular Libre Xiaomi Redmi Note</h5>
+        </div>
+        <div class="card-body d-flex justify-content-evenly">
+          <div class="card-body-preciomt text-primary">
+            <h5 class="card-title text-center">PRECIO MT</h5>
+            <h5 class="card-title text-center">$84.083</h5>
+          </div>
+          <div class="card-body-preciolista border-start">
+            <h6 class="card-title text-center ms-3">PRECIO LISTA</h6>
+            <h6 class="card-title text-center ms-3">$92.399</6>
+          </div>
+        </div>
+        <div class="card-body-cuotas">
+          <h6 class="card-title text-center">6 cuotas sin interes de $15.399,83</h6>
+        </div>
+        <div class="card-body-button d-flex justify-content-evenly p-1">
+          <button type="button" class="btn btn-primary col-5">COMPRAR</button>
+          <button type="button" class="btn btn-secondary col-5">VER</button>
+        </div>
+      </div>
+      <!--FIN CARD XIAOMI REDMI NOTE 11-->
+    </div>
+    <!--FIN CARD CELULARES DESTACADOS-->
+  </section>
+  <!--FIN DE SECCION CELULARES DESTACADOS-->
+
+  <!--INICIO DE SECCION BANNERx3-->
+  <section class="section-banner mt-5">
+    <div class="section-titulo">
+      <p class="text-uppercase fs-1 text-center mb-4">marcas</p>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="card text-white col col-4">
+          <img src="./Multimedia/img-section/Celulares/Banner/celu5g.webp" class="card-img" style="height: 13rem"
+            alt="...">
+          <div class="card-img-overlay">
+            <h5 class="card-title fw-bold">MOTOROLA</h5>
+          </div>
+        </div>
+        <div class="card text-white col col-4">
+          <img src="./Multimedia/img-section/Celulares/Banner/generacion-5G.jpg" class="card-img" style="height: 13rem"
+            alt="...">
+          <div class="card-img-overlay">
+            <h5 class="card-title fw-bold">SAMSUNG</h5>
+          </div>
+        </div>
+        <div class="card text-white col col-4">
+          <img src="./Multimedia/img-section/Celulares/Banner/xiaomi5g.jpg" class="card-img" style="height: 13rem"
+            alt="...">
+          <div class="card-img-overlay">
+            <h5 class="card-title fw-bold">XIAOMI</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!--FIN DE SECCION BANNERx3-->
+
+  <section class="section-novedades m-3 mt-5">
+    <!--INICIO DE SECCION CELULARES NOVEDADES-->
+    <div class="section-titulo">
+      <p class="text-uppercase fs-1 text-center mb-4">novedades</p>
+    </div>
+    <!--INICIO CARD CELULARES NOVEDADES-->
+    <div class="card-group">
+      <div class="card m-1 rounded-1">
+
+        <!--INICIO CARD MOTOROLA EDGE30-->
+        <img src="./Multimedia/img-section/Celulares/Motorola/motorola Edge 30.webp" class="card-img-top border-bottom "
+          alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-center">Celular Libre Motorola Edge 30</h5>
+        </div>
+        <div class="card-body d-flex justify-content-evenly">
+          <div class="card-body-preciomt text-primary">
+            <h5 class="card-title text-center">PRECIO MT</h5>
+            <h5 class="card-title text-center">$120.119</h5>
+          </div>
+          <div class="card-body-preciolista border-start">
+            <h6 class="card-title text-center ms-3">PRECIO LISTA</h6>
+            <h6 class="card-title text-center ms-3">$131.999</6>
+          </div>
+        </div>
+        <div class="card-body-cuotas">
+          <h6 class="card-title text-center">6 cuotas sin interes de $21.999,83</h6>
+        </div>
+        <div class="card-body-button d-flex justify-content-evenly p-1">
+          <button type="button" class="btn btn-primary col-5">COMPRAR</button>
+          <button type="button" class="btn btn-secondary col-5">VER</button>
+        </div>
+      </div>
+      <!--FIN CARD MOTOROLA EDGE30-->
+
+      <!--INICIO CARD MOTOROLA G22-->
+      <div class="card m-1 rounded-1">
+        <img src="./Multimedia/img-section/Celulares/Motorola/motorola G22.jpg" class="card-img-top border-bottom"
+          alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-center">Celular Libre Motorola G52</h5>
+        </div>
+        <div class="card-body d-flex justify-content-evenly">
+          <div class="card-body-preciomt text-primary">
+            <h5 class="card-title text-center">PRECIO MT</h5>
+            <h5 class="card-title text-center">$79.199</h5>
+          </div>
+          <div class="card-body-preciolista border-start">
+            <h6 class="card-title text-center ms-3">PRECIO LISTA</h6>
+            <h6 class="card-title text-center ms-3">$79.199</6>
+          </div>
+        </div>
+        <div class="card-body-cuotas">
+          <h6 class="card-title text-center">6 cuotas sin interes de $13.199,83</h6>
+        </div>
+        <div class="card-body-button d-flex justify-content-evenly p-1">
+          <button type="button" class="btn btn-primary col-5">COMPRAR</button>
+          <button type="button" class="btn btn-secondary col-5">VER</button>
+        </div>
+      </div>
+      <!--FIN CARD MOTOROLA G22-->
+
+      <!--INICIO CARD GALAXY A13 126GB-->
+      <div class="card m-1 rounded-1">
+        <img src="./Multimedia/img-section/Celulares/Samsung/samsung galaxy A13 128 GB.jpg"
+          class="card-img-top border-bottom" alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-center">Celular Libre Samsung Galaxy A13 128GB</h5>
+        </div>
+        <div class="card-body d-flex justify-content-evenly">
+          <div class="card-body-preciomt text-primary">
+            <h5 class="card-title text-center">PRECIO MT</h5>
+            <h5 class="card-title text-center">$69.068</h5>
+          </div>
+          <div class="card-body-preciolista border-start">
+            <h6 class="card-title text-center ms-3">PRECIO LISTA</h6>
+            <h6 class="card-title text-center ms-3">$75.899</6>
+          </div>
+        </div>
+        <div class="card-body-cuotas">
+          <h6 class="card-title text-center">6 cuotas sin interes de $12.649,83</h6>
+        </div>
+        <div class="card-body-button d-flex justify-content-evenly p-1">
+          <button type="button" class="btn btn-primary col-5">COMPRAR</button>
+          <button type="button" class="btn btn-secondary col-5">VER</button>
+        </div>
+      </div>
+      <!--FIN CARD GALAXY A13 126GB-->
+
+      <!--INICIO CARD GALAXY A53-->
+      <div class="card m-1 rounded-1">
+        <img src="./Multimedia/img-section/Celulares/Samsung/samsung galaxy A53.jpg" class="card-img-top border-bottom"
+          alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-center">Celular Libre Samsung Galaxy A53</h5>
+        </div>
+        <div class="card-body d-flex justify-content-evenly">
+          <div class="card-body-preciomt text-primary">
+            <h5 class="card-title text-center">PRECIO MT</h5>
+            <h5 class="card-title text-center">$150.149</h5>
+          </div>
+          <div class="card-body-preciolista border-start">
+            <h6 class="card-title text-center ms-3">PRECIO LISTA</h6>
+            <h6 class="card-title text-center ms-3">$164.999</6>
+          </div>
+        </div>
+        <div class="card-body-cuotas">
+          <h6 class="card-title text-center">6 cuotas sin interes de $27.499,83</h6>
+        </div>
+        <div class="card-body-button d-flex justify-content-evenly p-1">
+          <button type="button" class="btn btn-primary col-5">COMPRAR</button>
+          <button type="button" class="btn btn-secondary col-5">VER</button>
+        </div>
+      </div>
+      <!--FIN CARD GALAXY A53-->
+    </div>
+    <!--FIN CARD CELULARES NOVEDADES-->
+    </div>
+  </section>
+  <!--FIN DE SECCION CELULARES NOVEDADES-->
+
+  <!--INICIO DE SECCION BANNERx2-->
+  <section class="section-banner mt-5">
+    <div class="container-fluid">
+      <div class="row d-flex justify-content-evenly">
+        <div class="card text-white col col-5">
+          <img src="./Multimedia/img-section/Celulares/Banner/banner2.jpg" class="card-img" style="height: 13rem"
+            alt="...">
+          <div class="card-img-overlay">
+            <p class="card-text fs-3">Todos nuestros productos cuentan con garantía de fábrica por 12 meses.</p>
+          </div>
+        </div>
+        <div class="card text-white col col-5">
+          <img src="./Multimedia/img-section/Celulares/Banner/banner2.jpg" class="card-img " style="height: 13rem"
+            alt="...">
+          <div class="card-img-overlay">
+            <p class="card-text fs-3">¿No sabes que producto elegir?. Contactate con nosotros</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--FIN DE SECCION BANNERx2-->
+
+  <footer class="footer fs-6 container-fluid">
+    <p>Todos los derechos reservados - 2023</p>
+    <div class="iconos">
+      <a href="http://web.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="http://instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <a href="http://facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+    </div>
+  </footer>
+
+  <!-- INICIO SCRIPTS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <!-- FIN SCRIPTS -->
 </body>
 
 </html>

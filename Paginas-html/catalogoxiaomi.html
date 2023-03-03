@@ -6,10 +6,338 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RollingStore</title>
+
+    <link rel="stylesheet" type="text/css" href="../CSS/index.css" />
+    <link rel="stylesheet" href="/CSS/nav-footer.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
 </head>
 
-<body>
+<body class="conteiner-general">
+    <header>
+        <!--Navbar Superior-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger m-1">
+            <div class="container-fluid">
+                <div class="col col-4">
+                    <a href="" class="m-3">
+                        <img src="/Multimedia/img-about/Logo Ecommerce.png" class="imgLogo" alt="" width="50"
+                            height="50" />
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
 
+                <div class="collapse navbar-collapse col-4" id="navbarSupportedContent">
+                    <form class="d-flex col-12">
+                        <input class="form-control me-2 w-75" type="search" placeholder="Buscar producto"
+                            aria-label="Search" />
+                        <button class="btn btn-success" type="submit">
+                            Buscar
+                        </button>
+                    </form>
+                </div>
+
+                <div class="col col-4">
+                    <ul class="d-flex justify-content-around">
+                        <li class="nav-item">
+                            <a href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">Registro</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">Carrito</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--NavbaR Superior-->
+
+        <!--Navbar Inferior-->
+        <nav class="navbar-inf navbar-expand-lg navbar-dark bg-danger m-1">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav fs-5">
+                        <li class="fs-5 col-2 m-2">
+                            <img src="/Multimedia/img-nav-footer/celu.svg" style="height: 5rem;" alt="" />
+                            <a class="dropdown-item text-white" href="#">Apple</a>
+                        </li>
+                        <li class="fs-5 col-2 m-2">
+                            <img src="/Multimedia/img-nav-footer/celu.svg" style="height: 5rem;" alt="" />
+                            <a class="dropdown-item text-white" href="#">Samsung</a>
+                        </li>
+                        <li class="fs-5 col-2 m-2">
+                            <img src="/Multimedia/img-nav-footer/celu.svg" style="height: 5rem;" alt="" />
+                            <a class="dropdown-item text-white" href="#">Xiaomi</a>
+                        <li class="fs-5 col-2 m-2">
+                            <img src="/Multimedia/img-nav-footer/celu.svg" style="height: 5rem;" alt="" />
+                            <a class="dropdown-item text-white" href="#">Motorolla</a>
+                        </li>
+                        <li class="fs-5 col-2 m-2">
+                            <img src="/Multimedia/img-nav-footer/gadget.svg" style="height: 5rem;" alt="" />
+                            <a class="dropdown-item text-white" href="#">Accesorios</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--Navbar Inferior-->
+    </header>
+
+    <!-- INICIO DE LA SECCION PRINCIPAL-->
+    <section class="section-destacado m-3 mt-5">
+        <div class="section-titulo">
+            <p class="text-uppercase fs-1 text-center mb-4">xiaomi</p>
+        </div>
+        <!--INICIO CARD_1 CELULARES XIAOMI-->
+        <div class="card-group">
+            <!--INICIO CARD XIAOMI 11T PRO 256GB-->
+            <div class="card m-1 rounded-1">
+                <img src="../Multimedia/img-section/Celulares/Xiaomi/xiaomi-11t-pro-8gb-ram-256gb-rom (1).jpg"
+                    class="card-img-top border-bottom" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Celular Libre Xiaomi 11T Pro 256 GB</h5>
+                </div>
+                <div class="card-body d-flex justify-content-evenly">
+                    <div class="card-body-preciomt text-primary">
+                        <h5 class="card-title text-center">PRECIO MT</h5>
+                        <h5 class="card-title text-center">$299.999</h5>
+                    </div>
+                    <div class="card-body-preciolista border-start">
+                        <h6 class="card-title text-center ms-3">PRECIO LISTA</h6>
+                        <h6 class="card-title text-center ms-3">$323.999</6>
+                    </div>
+                </div>
+                <div class="card-body-cuotas">
+                    <h6 class="card-title text-center">6 cuotas sin interes de $49.999,83</h6>
+                </div>
+                <div class="card-body-button d-flex justify-content-evenly p-1">
+                    <button type="button" class="btn btn-primary col-5">COMPRAR</button>
+                    <button type="button" class="btn btn-secondary col-5">VER</button>
+                </div>
+            </div>
+            <!--FIN CARD XIAOMI 11T PRO 256GB-->
+
+            <!--INICIO CARD XIAOMI 11T 256GB-->
+            <div class="card m-1 rounded-1">
+                <img src="../Multimedia/img-section/Celulares/Xiaomi/xiaomi-11t-8gb-ram-256gb-rom.jpg"
+                    class="card-img-top border-bottom" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Celular Libre Xiaomi 11T 256 GB</h5>
+                </div>
+                <div class="card-body d-flex justify-content-evenly">
+                    <div class="card-body-preciomt text-primary">
+                        <h5 class="card-title text-center">PRECIO MT</h5>
+                        <h5 class="card-title text-center">$256.999</h5>
+                    </div>
+                    <div class="card-body-preciolista border-start">
+                        <h6 class="card-title text-center ms-3">PRECIO LISTA</h6>
+                        <h6 class="card-title text-center ms-3">$289.999</6>
+                    </div>
+                </div>
+                <div class="card-body-cuotas">
+                    <h6 class="card-title text-center">6 cuotas sin interes de $42.833,16</h6>
+                </div>
+                <div class="card-body-button d-flex justify-content-evenly p-1">
+                    <button type="button" class="btn btn-primary col-5">COMPRAR</button>
+                    <button type="button" class="btn btn-secondary col-5">VER</button>
+                </div>
+            </div>
+            <!--FIN CARD XIAOMI 11T 256GB-->
+
+            <!--INICIO CARD XIAOMI NOTE 11 PRO 128GB-->
+            <div class="card m-1 rounded-1">
+                <img src="../Multimedia/img-section/Celulares/Xiaomi/redmi-note-11-pro-6gb-ram-128gb-rom-graphite-gray.jpg"
+                    class="card-img-top border-bottom" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Celular Libre Xiaomi Readmi Note 11 Pro 128 GB</h5>
+                </div>
+                <div class="card-body d-flex justify-content-evenly">
+                    <div class="card-body-preciomt text-primary">
+                        <h5 class="card-title text-center">PRECIO MT</h5>
+                        <h5 class="card-title text-center">$162.999</h5>
+                    </div>
+                    <div class="card-body-preciolista border-start">
+                        <h6 class="card-title text-center ms-3">PRECIO LISTA</h6>
+                        <h6 class="card-title text-center ms-3">$194.999</6>
+                    </div>
+                </div>
+                <div class="card-body-cuotas">
+                    <h6 class="card-title text-center">6 cuotas sin interes de $15.308,17</h6>
+                </div>
+                <div class="card-body-button d-flex justify-content-evenly p-1">
+                    <button type="button" class="btn btn-primary col-5">COMPRAR</button>
+                    <button type="button" class="btn btn-secondary col-5">VER</button>
+                </div>
+            </div>
+            <!--FIN CARD XIAOMI NOTE 11 PRO 128GB-->
+
+            <!--INICIO CARD XIAOMI NOTE 10 5G 128GB-->
+            <div class="card m-1 rounded-1">
+                <img src="../Multimedia/img-section/Celulares/Xiaomi/redmi-note-10-5g-4gb128gb.jpg"
+                    class="card-img-top border-bottom" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Celular Libre Ciaomi Note 10 5G 128 GB</h5>
+                </div>
+                <div class="card-body d-flex justify-content-evenly">
+                    <div class="card-body-preciomt text-primary">
+                        <h5 class="card-title text-center">PRECIO MT</h5>
+                        <h5 class="card-title text-center">$99.999</h5>
+                    </div>
+                    <div class="card-body-preciolista border-start">
+                        <h6 class="card-title text-center ms-3">PRECIO LISTA</h6>
+                        <h6 class="card-title text-center ms-3">$125.999</6>
+                    </div>
+                </div>
+                <div class="card-body-cuotas">
+                    <h6 class="card-title text-center">6 cuotas sin interes de $16.666,5</h6>
+                </div>
+                <div class="card-body-button d-flex justify-content-evenly p-1">
+                    <button type="button" class="btn btn-primary col-5">COMPRAR</button>
+                    <button type="button" class="btn btn-secondary col-5">VER</button>
+                </div>
+            </div>
+            <!--FIN CARD XIAOMI NOTE 10 5G 128GB-->
+        </div>
+        <!--FIN CARD_1 CELULARES XIAOMI-->
+    </section>
+    <!--FIN CARD_1 CELULARES XIAOMI-->
+
+    <section class="section-novedades m-3 mt-5">
+        <!--INICIO CARD_2 CELULARES XIAOMI-->
+        <div class="card-group">
+            <div class="card m-1 rounded-1">
+                <!--INICIO CARD XIAOMI READMI 10 CARBON 128 GB-->
+                <img src="../Multimedia/img-section/Celulares/Xiaomi/redmi-10-2022-carbon-gray-4gb-ram-128gb-rom.jpg"
+                    class="card-img-top border-bottom " alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Celular Libre Xiaomi Readmi 10 Carbon 128 GB</h5>
+                </div>
+                <div class="card-body d-flex justify-content-evenly">
+                    <div class="card-body-preciomt text-primary">
+                        <h5 class="card-title text-center">PRECIO MT</h5>
+                        <h5 class="card-title text-center">$101.399</h5>
+                    </div>
+                    <div class="card-body-preciolista border-start">
+                        <h6 class="card-title text-center ms-3">PRECIO LISTA</h6>
+                        <h6 class="card-title text-center ms-3">$143.999</6>
+                    </div>
+                </div>
+                <div class="card-body-cuotas">
+                    <h6 class="card-title text-center">6 cuotas sin interes de $16.899,83</h6>
+                </div>
+                <div class="card-body-button d-flex justify-content-evenly p-1">
+                    <button type="button" class="btn btn-primary col-5">COMPRAR</button>
+                    <button type="button" class="btn btn-secondary col-5">VER</button>
+                </div>
+            </div>
+            <!--FIN CARD XIAOMI READMI 10 CARBON 128 GB-->
+
+            <!--INICIO CARD XIAOMI READMI NOTE 11 4 GB 128 GB-->
+            <div class="card m-1 rounded-1">
+                <img src="../Multimedia/img-section/Celulares/Xiaomi/redmi-note-11-4gb-ram-128gb-rom.jpg"
+                    class="card-img-top border-bottom" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Celular Libre Xiaomi Readmi Note 11 128 GB</h5>
+                </div>
+                <div class="card-body d-flex justify-content-evenly">
+                    <div class="card-body-preciomt text-primary">
+                        <h5 class="card-title text-center">PRECIO MT</h5>
+                        <h5 class="card-title text-center">$94.999</h5>
+                    </div>
+                    <div class="card-body-preciolista border-start">
+                        <h6 class="card-title text-center ms-3">PRECIO LISTA</h6>
+                        <h6 class="card-title text-center ms-3">$114.149</6>
+                    </div>
+                </div>
+                <div class="card-body-cuotas">
+                    <h6 class="card-title text-center">6 cuotas sin interes de $15.833,16</h6>
+                </div>
+                <div class="card-body-button d-flex justify-content-evenly p-1">
+                    <button type="button" class="btn btn-primary col-5">COMPRAR</button>
+                    <button type="button" class="btn btn-secondary col-5">VER</button>
+                </div>
+            </div>
+            <!--FIN CARD XIAOMI READMI NOTE 11 4 GB 128 GB-->
+
+            <!--INICIO CARD XIAOMI READMI 10C 64 GB-->
+            <div class="card m-1 rounded-1">
+                <img src="../Multimedia/img-section/Celulares/Xiaomi/redmi-10c-graphite-gray-4gb-ram-64gb-rom.jpg"
+                    class="card-img-top border-bottom" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Celular Libre Samsung Galaxy A33 5G</h5>
+                </div>
+                <div class="card-body d-flex justify-content-evenly">
+                    <div class="card-body-preciomt text-primary">
+                        <h5 class="card-title text-center">PRECIO MT</h5>
+                        <h5 class="card-title text-center">$85.599</h5>
+                    </div>
+                    <div class="card-body-preciolista border-start">
+                        <h6 class="card-title text-center ms-3">PRECIO LISTA</h6>
+                        <h6 class="card-title text-center ms-3">$104.999</6>
+                    </div>
+                </div>
+                <div class="card-body-cuotas">
+                    <h6 class="card-title text-center">6 cuotas sin interes de $14.266,5</h6>
+                </div>
+                <div class="card-body-button d-flex justify-content-evenly p-1">
+                    <button type="button" class="btn btn-primary col-5">COMPRAR</button>
+                    <button type="button" class="btn btn-secondary col-5">VER</button>
+                </div>
+            </div>
+            <!--FIN CARD XIAOMI READMI 10C 64 GB-->
+
+            <!--INICIO XIAOMI READMI 10A 32 GB-->
+            <div class="card m-1 rounded-1">
+                <img src="../Multimedia/img-section/Celulares/Xiaomi/redmi-10a-2gb-ram-32g-rom-graphite-gray.jpg
+                " class="card-img-top border-bottom" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Celular Libre Xiaomi Readmi 10A 32GB</h5>
+                </div>
+                <div class="card-body d-flex justify-content-evenly">
+                    <div class="card-body-preciomt text-primary">
+                        <h5 class="card-title text-center">PRECIO MT</h5>
+                        <h5 class="card-title text-center">$47.547</h5>
+                    </div>
+                    <div class="card-body-preciolista border-start">
+                        <h6 class="card-title text-center ms-3">PRECIO LISTA</h6>
+                        <h6 class="card-title text-center ms-3">$52.249</6>
+                    </div>
+                </div>
+                <div class="card-body-cuotas">
+                    <h6 class="card-title text-center">6 cuotas sin interes de $8.708,17</h6>
+                </div>
+                <div class="card-body-button d-flex justify-content-evenly p-1">
+                    <button type="button" class="btn btn-primary col-5">COMPRAR</button>
+                    <button type="button" class="btn btn-secondary col-5">VER</button>
+                </div>
+            </div>
+            <!--FIN CARD READMI 10A 32 GB-->
+        </div>
+        <!--FIN CARD_2 CELULARES SAMSUNG-->
+    </section>
+    <footer class="footer fs-6 container-fluid">
+        <p>Todos los derechos reservados - 2023</p>
+        <div class="iconos">
+            <a href="/Multimedia/img-nav-footer/whatsapp-logo-2.png" target="_blank"><i
+                    class="fa-brands fa-whatsapp"></i></a>
+            <a href="/Multimedia/img-nav-footer/instagram.png" target="_blank"><i
+                    class="fa-brands fa-instagram"></i></a>
+            <a href="/Multimedia/img-nav-footer/Twitter-logo.png" target="_blank"><i
+                    class="fa-brands fa-twitter"></i></a>
+        </div>
+    </footer>
+
+
+    <!-- INICIO SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <!-- FIN SCRIPTS -->
 </body>
 
 </html>
