@@ -8,12 +8,86 @@
     <title>RollingStore</title>
 
     <link rel="stylesheet" type="text/css" href="../CSS/index.css" />
+    <link rel="stylesheet" href="../CSS/nav-footer.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
 </head>
 
 
-<body class="conteiner-general container-fluid">
+<body class="conteiner-general">
+    <header>
+        <!--Navbar Superior-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger m-1">
+            <div class="container-fluid navbar-sup">
+                <div class="col col-4">
+                    <a href="../index.html" class="m-3">
+                        <img src="/Multimedia/img-about/Logo Ecommerce.png" class="imgLogo" alt="" width="50"
+                            height="50" />
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse col-4" id="navbarSupportedContent">
+                    <form class="d-flex col-12">
+                        <input class="form-control me-2 w-75" type="search" placeholder="Buscar producto"
+                            aria-label="Search" />
+                        <button class="btn btn-success" type="submit">
+                            Buscar
+                        </button>
+                    </form>
+                </div>
+
+                <div class="col-4">
+                    <ul class="list">
+                        <li class="nav-item">
+                            <a href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">Registro</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">Carrito</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--NavbaR Superior-->
+
+        <!--Navbar Inferior-->
+        <nav class="navbar-inf navbar-expand-lg navbar-dark bg-danger m-1">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav fs-5">
+                        <li class="fs-5">
+                            <img src="/Multimedia/img-nav-footer/celu.svg" style="height: 5rem;" alt="" />
+                            <a class="dropdown-item text-white" href="catalogosamsung.html">Samsung</a>
+                        </li>
+                        <li class="fs-5">
+                            <img src="/Multimedia/img-nav-footer/celu.svg" style="height: 5rem;" alt="" />
+                            <a class="dropdown-item text-white" href="catalogoxiaomi.html">Xiaomi</a>
+                        <li class="fs-5">
+                            <img src="/Multimedia/img-nav-footer/celu.svg" style="height: 5rem;" alt="" />
+                            <a class="dropdown-item text-white" href="catalogomotorola.html">Motorolla</a>
+                        </li>
+                        <li class="fs-5">
+                            <img src="/Multimedia/img-nav-footer/gadget.svg" style="height: 5rem;" alt="" />
+                            <a class="dropdown-item text-white" href="catalogoaccesorios.html">Accesorios</a>
+                        </li>
+                        <li class="fs-5">
+                            <img src="/Multimedia/img-nav-footer/celu.svg" style="height: 5rem;" alt="" />
+                            <a class="dropdown-item text-white" href="aboutus.html">Acerca de nosotros</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--Navbar Inferior-->
+    </header>
     <!-- INICIO DE LA SECCION PRINCIPAL-->
     <section class="section-destacado m-3 mt-5">
         <div class="section-titulo">
@@ -250,11 +324,57 @@
     </section>
     <!--FIN DE SECCION CELULARES NOVEDADES-->
 
-    <!-- INICIO SCRIPTS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-        crossorigin="anonymous"></script>
-    <!-- FIN SCRIPTS -->
+    <!--INICIO DE FOOTER-->
+    <footer class="footer">
+        <h3>Todos los derechos reservados - 2023</h3>
+        <div class="iconos container-fluid d-flex justify-content-evenly">
+            <div class="footer-menu">
+                <ul>
+                    <li class="col-2 m-2">
+                        <a class="dropdown-item text-white" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="col-2 m-2">
+                        <a class="dropdown-item text-white" href="./aboutus.html">Sobre Nosotros</a>
+                    </li>
+                    <li class="col-2 m-2">
+                        <a class="dropdown-item text-white" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-ubicacion">
+                <ul class="footer-icons">
+                    <li>
+                        <p>Ubicación
+                        <p>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3553.076081752743!2d-65.40737637246593!3d-27.05934632889694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94224be05e143b65%3A0x9216e72d647bf71d!2sHip%C3%B3lito%20Yrigoyen%20340%2C%20T4132BBF%20Famaill%C3%A1%2C%20Tucum%C3%A1n!5e0!3m2!1ses-419!2sar!4v1677848943752!5m2!1ses-419!2sar"
+                                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-redes">
+                <ul class="footer-icons container-fluid">
+                    <li class="col-2 m-2">
+                        <a class="dropdown-item text-white" href="#"><img src="/Multimedia/img-nav-footer/instagram.png"
+                                style="height: 3rem;" alt="" />Instagram</a>
+                    </li>
+                    <li class="col-2 m-2">
+                        <a class="dropdown-item text-white" href="#"><img
+                                src="/Multimedia/img-nav-footer/whatsapp-logo-2.png" style="height: 3rem;"
+                                alt="" />Whatsapp</a>
+                    </li>
+                    <li class="col-2 m-2">
+                        <a class="dropdown-item text-white" href="#"> <img
+                                src="/Multimedia/img-nav-footer/Twitter-logo.png" style="height: 3rem;"
+                                alt="" />Twitter</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!--FIN DE FOOTER-->
 </body>
 
 </html>
