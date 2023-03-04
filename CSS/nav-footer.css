@@ -32,6 +32,13 @@
   font-family: "Poppins", sans-serif;
   font-weight: bolder;
 }
+
+@media (max-width: 1000px) {
+  .navbar-inf div ul li {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 .navbar-inf div ul li {
   margin-left: 3rem;
   margin-right: 3rem;

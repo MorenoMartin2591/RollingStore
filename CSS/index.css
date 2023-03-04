@@ -88,6 +88,18 @@ p {
   height: 3rem !important;
 }
 
+@media (max-width: 900px) {
+  .carousel-inner img {
+    height: 20rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .carousel-inner img {
+    height: 15rem;
+  }
+}
+
 /*---------BannerX3---------*/
 .card-img-overlay h5 {
   text-align: center;
@@ -136,4 +148,33 @@ p {
 }
 .card-body-button button {
   background-color: #000080;
+}
+
+@media (max-width: 1000px) {
+  .card h6 {
+    font-size: 0.8rem;
+  }
+  .card h5 {
+    font-size: 0.8rem;
+  }
+  .card-body-button button {
+    font-size: 0.4rem;
+  }
+}
+
+@media (max-width: 570px) {
+  .card {
+    width: 80%;
+    display: flex;
+  }
+
+  .card h6 {
+    font-size: 1rem;
+  }
+  .card h5 {
+    font-size: 1rem;
+  }
+  .card-body-button button {
+    font-size: 1rem;
+  }
 }
