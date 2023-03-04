@@ -3,3 +3,34 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+a {
+  text-decoration: none;
+}
+
+.link-error {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3em;
+}
+
+.container-link-error {
+  padding: 1rem;
+}
+.container-img-error {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+.img-error {
+  display: block;
+  margin: auto;
+  width: 60%;
+  height: auto;
+}
+
+@media (max-width: 360px) {
+  .link-error {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.9em;
+  }
+}
