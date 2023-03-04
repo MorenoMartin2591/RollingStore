@@ -5,21 +5,21 @@
 }
 
 .navbar {
-  background: linear-gradient(to left, #884299, #e2cee5);;
+  background: linear-gradient(to left, #884299, #e2cee5);
   justify-content: center;
   align-items: center;
   font-family: "Poppins", sans-serif;
   font-weight: bolder;
 }
 
-.navbar-sup div ul{
+.navbar-sup div ul {
   display: flex;
   justify-content: space-around;
   margin-top: 1rem;
   list-style: none;
 }
 
-.navbar-sup div ul a{
+.navbar-sup div ul a {
   text-decoration: none;
   color: white;
   font-size: 1.3rem;
@@ -32,7 +32,7 @@
   font-family: "Poppins", sans-serif;
   font-weight: bolder;
 }
-.navbar-inf div ul li{
+.navbar-inf div ul li {
   margin-left: 3rem;
   margin-right: 3rem;
 }
@@ -53,7 +53,7 @@
 }
 
 .footer {
-  background: linear-gradient(to left,#884299, #e8dfea);
+  background: linear-gradient(to left, #884299, #e8dfea);
   text-align: center;
   margin-top: 1rem;
 }
@@ -64,36 +64,37 @@
   font-weight: bold;
 }
 
-.footer li a, p{
+.footer li a,
+p {
   font-size: 2rem;
-  font-style: italic;
+  /* font-style: italic; */
   font-weight: bold;
 }
 
-.footer ul{
+.footer ul {
   list-style: none;
 }
 
-.footer-menu{
+.footer-menu {
   margin-top: 2rem;
 }
 
-.footer-menu ul{
+.footer-menu ul {
   display: flex;
   flex-direction: column;
 }
 
-.footer-redes{
+.footer-redes {
   margin-top: 2rem;
 }
 
-.footer-redes ul{
+.footer-redes ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.footer-ubicacion ul li iframe{
-width: 13rem;
-height: 13rem;
+.footer-ubicacion ul li iframe {
+  width: 13rem;
+  height: 13rem;
 }
