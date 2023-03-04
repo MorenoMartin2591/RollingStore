@@ -93,7 +93,6 @@ const productos = [
 const cargGrup = document.querySelector(".card-group");
 const tbody = document.querySelector("tbody");
 
-/*Recorro el array y genero un documento a insertar en el html*/
 productos.forEach((producto) => {
   tbody.innerHTML += `
   <tr>
