@@ -1,21 +1,21 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
 }
 
 /* Baby Blue
-#D6DDE0
-
-Blue Grotto
-#446FA0
-
-Navy Blue
-#223C60
-
-Gunmetal Gray
-#51555B */
+  #D6DDE0
+  
+  Blue Grotto
+  #446FA0
+  
+  Navy Blue
+  #223C60
+  
+  Gunmetal Gray
+  #51555B */
 
 .container {
   width: 100%;
@@ -26,6 +26,12 @@ Gunmetal Gray
   position: relative;
 }
 .form-box {
+  width: 90%;
+  max-width: 450px;
+  position: absolute;
+  top: -20%;
+  left: 50%;
+  transform: translate(-50%, 50%);
   background-color: #d6dde0;
   padding: 50px 60px 70px;
   text-align: center;
@@ -80,7 +86,7 @@ form p a {
   color: #51555b;
 }
 
-#acceder {
+button {
   width: 55%;
   margin-top: 20px;
   background: #223c60;
@@ -90,17 +96,4 @@ form p a {
   border: 0;
   outline: 0;
   cursor: pointer;
-}
-
-/* Modal */
-
-#modal::backdrop {
-  background-color: rgba(0, 0, 0, 0.55);
-}
-
-#modal {
-  width: 450px;
-  top: 10%;
-  left: 35%;
-  border-style: none;
 }

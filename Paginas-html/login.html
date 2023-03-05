@@ -13,29 +13,33 @@
     />
     <title>RollingStore</title>
   </head>
-
+  <button id="btn-open-modal">Login PopUp</button>
   <body>
     <div class="container">
-      <div class="form-box">
-        <h1 id="titulo">Acceso</h1>
-        <form action="">
-          <div class="input-group">
-            <div class="input-field">
-              <input type="text" placeholder="Nombre de Usuario" required />
-            </div>
-            <div class="input-field">
-              <input type="password" placeholder="Contraseña" required />
-            </div>
+      <dialog id="modal">
+        <div class="form-box">
+          <h1 id="titulo">Acceso</h1>
+          <form id="form" action="/" method="dialog">
+            <div class="input-group">
+              <p id="error"></p>
+              <div class="input-field">
+                <input type="text" placeholder="Nombre de Usuario" id="text" />
+              </div>
+              <div class="input-field">
+                <input type="password" placeholder="Contraseña" id="password" />
+              </div>
 
-            <p>Contraseña Perdida <a href="#">Haz click aqui!</a></p>
-            <p>
-              ¿No tienes cuenta? <a href="registrarse.html">Creala aqui!</a>
-            </p>
-            <!-- Login deberia verse como una ventana modal, mientras que registrarse seria una pagina -->
-          </div>
-          <button type="button" id="accesoBtn">Acceder</button>
-        </form>
-      </div>
+              <p>Contraseña Perdida <a href="#">Haz click aqui!</a></p>
+              <p>
+                ¿No tienes cuenta? <a href="registrarse.html">Creala aqui!</a>
+              </p>
+              <!-- Login deberia verse como una ventana modal, mientras que registrarse seria una pagina -->
+            </div>
+            <button type="submit" id="acceder">Acceder</button>
+          </form>
+        </div>
+      </dialog>
     </div>
+    <script src="../JS/login.js"></script>
   </body>
 </html>
