@@ -18,9 +18,9 @@
   <header>
     <!--Navbar Superior-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-danger m-1">
-      <div class="container-fluid">
-        <div class="col col-4">
-          <a href="" class="m-3">
+      <div class="container-fluid navbar-sup">
+        <div class="col col-md-3">
+          <a href="index.html" class="m-3">
             <img src="/Multimedia/img-about/Logo Ecommerce.png" class="imgLogo" alt="" width="50" height="50" />
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -30,7 +30,7 @@
           </button>
         </div>
 
-        <div class="collapse navbar-collapse col-4" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse col col-md-3" id="navbarSupportedContent">
           <form class="d-flex col-12">
             <input class="form-control me-2 w-75" type="search" placeholder="Buscar producto" aria-label="Search" />
             <button class="btn btn-success" type="submit">
@@ -39,13 +39,13 @@
           </form>
         </div>
 
-        <div class="col col-4">
-          <ul class="d-flex justify-content-around">
+        <div class="col-5 col-md-6 col-sm-9">
+          <ul class="list">
             <li class="nav-item">
-              <a href="#">Inicio</a>
+              <a href="./Paginas-html/login.html">Inicio</a>
             </li>
             <li class="nav-item">
-              <a href="#">Registro</a>
+              <a href="./Paginas-html/login.html">Registro</a>
             </li>
             <li class="nav-item">
               <a href="#">Carrito</a>
@@ -57,31 +57,29 @@
     <!--NavbaR Superior-->
 
     <!--Navbar Inferior-->
-    <nav class="navbar-inf navbar-expand-lg navbar-dark bg-danger m-1">
+    <nav class="navbar-inf navbar-expand-sm m-1">
       <div class="container-fluid">
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav fs-5">
-            <li class="fs-5 col-2 m-2">
-              <img src="/Multimedia/img-nav-footer/celu.svg" style="height: 5rem;" alt="" />
-              <a class="dropdown-item text-white" href="#">Apple</a>
-            </li>
-            <li class="fs-5 col-2 m-2">
-              <img src="/Multimedia/img-nav-footer/celu.svg" style="height: 5rem;" alt="" />
-              <a class="dropdown-item text-white" href="#">Samsung</a>
-            </li>
-            <li class="fs-5 col-2 m-2">
-              <img src="/Multimedia/img-nav-footer/celu.svg" style="height: 5rem;" alt="" />
-              <a class="dropdown-item text-white" href="#">Xiaomi</a>
-            <li class="fs-5 col-2 m-2">
-              <img src="/Multimedia/img-nav-footer/celu.svg" style="height: 5rem;" alt="" />
-              <a class="dropdown-item text-white" href="#">Motorolla</a>
-            </li>
-            <li class="fs-5 col-2 m-2">
-              <img src="/Multimedia/img-nav-footer/gadget.svg" style="height: 5rem;" alt="" />
-              <a class="dropdown-item text-white" href="#">Accesorios</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="navbar-nav">
+          <li class="fs-6">
+            <img src="/Multimedia/img-nav-footer/celu.svg" style="height: 5rem;" alt="" />
+            <a class="dropdown-item text-white" href="./Paginas-html/catalogosamsung.html">Samsung</a>
+          </li>
+          <li class="fs-6 ">
+            <img src="/Multimedia/img-nav-footer/celu.svg" style="height: 5rem;" alt="" />
+            <a class="dropdown-item text-white" href="./Paginas-html/catalogoxiaomi.html">Xiaomi</a>
+          <li class="fs-6">
+            <img src="/Multimedia/img-nav-footer/celu.svg" style="height: 5rem;" alt="" />
+            <a class="dropdown-item text-white" href="./Paginas-html/catalogomotorola.html">Motorolla</a>
+          </li>
+          <li class="fs-6 ">
+            <img src="/Multimedia/img-nav-footer/gadget.svg" style="height: 5rem;" alt="" />
+            <a class="dropdown-item text-white" href="./Paginas-html/catalogoaccesorios.html">Accesorios</a>
+          </li>
+          <li class="fs-6">
+            <img src="/Multimedia/img-nav-footer/celu.svg" style="height: 5rem;" alt="" />
+            <a class="dropdown-item text-white" href="./Paginas-html/aboutus.html">Acerca de nosotros</a>
+          </li>
+        </ul>
       </div>
     </nav>
     <!--Navbar Inferior-->
@@ -110,7 +108,7 @@
             <!--FIN DE BOTONES DEL CARRUSEL-->
 
             <!-- INICIO DE IMAGENES DEL CARRUSEL -->
-            <div class="carousel-inner">
+            <div class="carousel-inner col-lg-8 col-sm-6">
               <!--INICIO IMAGEN MERCADO PAGO-->
               <div class="carousel-item active" data-bs-interval="10000">
                 <img src="./Multimedia/img-section/Carrucel/MP.webp" class="d-block w-100" alt="..." />
@@ -118,25 +116,25 @@
               <!--FIN IMAGEN MERCADO PAGO-->
 
               <!--INICIO IMAGEN SAMSUNG-->
-              <div class="carousel-item" data-bs-interval="10000">
+              <div class="carousel-item col-lg-8 col-sm-6" data-bs-interval="10000">
                 <img src="./Multimedia/img-section/Carrucel/samsung.webp" class="d-block w-100" alt="..." />
               </div>
               <!--INICIO IMAGEN SAMSUNG-->
 
               <!--INICIO IMAGEN XIAOMI-->
-              <div class="carousel-item" data-bs-interval="10000">
+              <div class="carousel-item col-lg-8 col-sm-6" data-bs-interval="10000">
                 <img src="./Multimedia/img-section/Carrucel/xiaomi.webp" class="d-block w-100" alt="..." />
               </div>
               <!--FIN IMAGEN XIAOMI-->
 
               <!--INICIO IMAGEN MOTOROLA-->
-              <div class="carousel-item" data-bs-interval="10000">
+              <div class="carousel-item col-lg-8 col-sm-6" data-bs-interval="10000">
                 <img src="./Multimedia/img-section/Carrucel/motorola.webp" class="d-block  w-100" alt="..." />
               </div>
               <!--FIN IMAGEN MOTOROLA-->
 
               <!--INICIO IMAGEN ACCESORIOS-->
-              <div class="carousel-item" data-bs-interval="10000">
+              <div class="carousel-item col-lg-8 col-sm-6" data-bs-interval="10000">
                 <img src="./Multimedia/img-section/Carrucel/accesorios.webp" class="d-block w-100" alt="..." />
               </div>
               <!--FIN IMAGEN ACCESORIOS-->
@@ -167,9 +165,9 @@
       <p class="text-uppercase fs-1 text-center mb-4">destacado</p>
     </div>
     <!--INICIO CARD CELULARES DESTACADOS-->
-    <div class="card-group">
+    <div class="card-group row justify-content-between">
       <!--INICIO CARD MOTOROLA E20-->
-      <div class="card m-1 rounded-1">
+      <div class="card m-1 rounded-1 col-lg-4 col-sm-9">
         <img src="./Multimedia/img-section/Celulares/Motorola/moto E20.jpg" class="card-img-top border-bottom"
           alt="...">
         <div class="card-body">
@@ -196,7 +194,7 @@
       <!--FIN CARD MOTOROLA E20-->
 
       <!--INICIO CARD GALAXY A03-->
-      <div class="card m-1 rounded-1">
+      <div class="card m-1 rounded-1 col-lg-4 col-md-9">
         <img src="./Multimedia/img-section/Celulares/Samsung/samsung galaxy A03 CORE.jpg"
           class="card-img-top border-bottom" alt="...">
         <div class="card-body">
@@ -223,7 +221,7 @@
       <!--FIN CARD GALAXY A03-->
 
       <!--INICIO CARD GALAXY A23-->
-      <div class="card m-1 rounded-1">
+      <div class="card m-1 rounded-1 col-lg-9 col-md-9">
         <img src="./Multimedia/img-section/Celulares/Samsung/samsung galaxy A23.jpg" class="card-img-top border-bottom"
           alt="...">
         <div class="card-body">
@@ -250,7 +248,7 @@
       <!--FIN CARD GALAXY A23-->
 
       <!--INICIO CARD XIAOMI REDMI NOTE 11-->
-      <div class="card m-1 rounded-1">
+      <div class="card m-1 rounded-1 col-lg-4 col-md-9">
         <img src="./Multimedia/img-section/Celulares/Xiaomi/xiaomi Redmi Note 11.webp"
           class="card-img-top border-bottom" alt="...">
         <div class="card-body">
@@ -458,35 +456,62 @@
     </div>
   </section>
   <!--FIN DE SECCION BANNERx2-->
-  <footer class="footer">
-    <p>Todos los derechos reservados - 2023</p>
-    <div class="iconos">
-      <ul class="footer-icons container-fluid fs-4">
-        <li class="fs-5 col-2 m-2">
-          <img src="/Multimedia/img-nav-footer/whatsapp-logo-2.png" style="height: 3rem;" alt="" />
-          <a class="dropdown-item text-white" href="#">whatsapp</a>
-        </li>
-        <li class="fs-5 col-2 m-2">
-          <img src="/Multimedia/img-nav-footer/Twitter-logo.png" style="height: 3rem;" alt="" />
-          <a class="dropdown-item text-white" href="#">Twitter</a>
-        </li>
-        <li class="fs-5 col-2 m-2">
-          <img src="/Multimedia/img-nav-footer/instagram.png" style="height: 3rem;" alt="" />
-          <a class="dropdown-item text-white" href="#">Instagram</a>
-        <li class="fs-5 col-2 m-2">
-          <img src="/Multimedia/img-nav-footer/logomaps.png" style="height: 3rem;" alt="" />
-          <a class="dropdown-item text-white" href="#">Ubicacion</a>
-        </li>
-        <li class="fs-5 col-2 m-2">
-          <img src="/Multimedia/img-nav-footer/aboutus.png" style="height: 3rem;" alt="" />
-          <a class="dropdown-item text-white" href="#">Sobre Nosotros</a>
-        </li>
 
-        <!-- INICIO SCRIPTS -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-          crossorigin="anonymous"></script>
-        <!-- FIN SCRIPTS -->
+  <!--INICIO DE FOOTER-->
+  <footer class="footer">
+    <h3>Todos los derechos reservados - 2023</h3>
+    <div class="iconos container-fluid d-flex justify-content-evenly">
+      <div class="footer-menu">
+        <ul>
+          <li class="col-2 m-2">
+            <a class="dropdown-item text-white" href="index.html">Inicio</a>
+          </li>
+          <li class="col-2 m-2">
+            <a class="dropdown-item text-white" href="./Paginas-html/aboutus.html">Sobre Nosotros</a>
+          </li>
+          <li class="col-2 m-2">
+            <a class="dropdown-item text-white" href="#">Contacto</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-ubicacion">
+        <ul class="footer-icons">
+          <li>
+            <p>Ubicación
+            <p>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3553.076081752743!2d-65.40737637246593!3d-27.05934632889694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94224be05e143b65%3A0x9216e72d647bf71d!2sHip%C3%B3lito%20Yrigoyen%20340%2C%20T4132BBF%20Famaill%C3%A1%2C%20Tucum%C3%A1n!5e0!3m2!1ses-419!2sar!4v1677848943752!5m2!1ses-419!2sar"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-redes">
+        <ul class="footer-icons container-fluid">
+          <li class="col-2 m-2">
+            <a class="dropdown-item text-white" href="./Paginas-html/error404.html"><img
+                src="/Multimedia/img-nav-footer/instagram.png" style="height: 3rem;" alt="" />Instagram</a>
+          </li>
+          <li class="col-2 m-2">
+            <a class="dropdown-item text-white" href="./Paginas-html/error404.html"><img
+                src="/Multimedia/img-nav-footer/whatsapp-logo-2.png" style="height: 3rem;" alt="" />Whatsapp</a>
+          </li>
+          <li class="col-2 m-2">
+            <a class="dropdown-item text-white" href="./Paginas-html/error404.html"> <img
+                src="/Multimedia/img-nav-footer/Twitter-logo.png" style="height: 3rem;" alt="" />Twitter</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <!--INICIO DE FOOTER-->
+
+  <!-- INICIO SCRIPTS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <!-- FIN SCRIPTS -->
 </body>
 
 </html>

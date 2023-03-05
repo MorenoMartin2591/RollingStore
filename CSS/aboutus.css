@@ -116,7 +116,7 @@ img:hover {
   margin-top: 1rem;
   padding: 1rem 1rem 1rem 1rem;
   text-align: center;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif !important;
   color: aliceblue;
 }
 
@@ -128,7 +128,7 @@ img:hover {
   margin: 2rem 2rem 2rem 2rem;
   padding: auto;
   font-size: 1.5rem;
-  font-family: "texto";
+  font-family: "texto" !important;
   color: aliceblue;
 }
 
