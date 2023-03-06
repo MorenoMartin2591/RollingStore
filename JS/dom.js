@@ -92,8 +92,10 @@ const productos = [
 //Funcion para Guardar en LocalStorage//
 
 function guardarProductoslocal() {
-  const json = JSON.stringify(productos);
-  localStorage.setItem("productosLocal", json);
+  if (JSON.parse(localStorage.getItem("productosLocal")) == null) {
+    const json = JSON.stringify(productos);
+    localStorage.setItem("productosLocal", json);
+  }
 }
 
 guardarProductoslocal();
@@ -195,6 +197,7 @@ buttonAgregar.addEventListener("click", () => {
   const id = productos.length + 1;
   const nuevoProducto = { id, tipo, marca, modelo, precio };
   productos.push(nuevoProducto);
+  localStorage.setItem("productosLocal", JSON.stringify(productos));
   tbody.innerHTML += `
     <tr>
       <th class="text-center">${id}</th>
