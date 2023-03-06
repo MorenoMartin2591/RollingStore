@@ -15,12 +15,11 @@
   backdrop-filter: blur(3px);
 }
 
-@media (max-width: 1290px) {
+@media (max-width: 2500px) {
   .conteiner-general {
     background-image: url(/Multimedia/img-section/background-index.jpg);
     background-size: cover;
-    height: 100vh;
-    background-attachment: fixed;
+    backdrop-filter: blur(2px);
   }
 }
 
@@ -42,17 +41,6 @@
     transform: translateY(0%);
   }
 }
-
-/*---------Navbar---------*/
-/* .navbar-superior {
-  background-color: #ff6347 !important;
-  border-radius: 1rem;
-} */
-
-/* .navbar {
-  background-color: #dc143c !important;
-  border-radius: 1rem;
-} */
 
 .collapse b,
 strong,
@@ -113,9 +101,9 @@ p {
 }
 
 .card-img-overlay h5:hover {
-  font-size: 4rem;
+  font-size: 2rem;
   text-decoration: underline;
-  color: red;
+  color: rebeccapurple;
   text-shadow: 0px 2px 1px #333333, 0px 0px 4px white;
 }
 
@@ -134,9 +122,7 @@ p {
   }
 }
 
-/*---------BannerX2---------*/
-
-/*---------Card---------*/
+/*---------Card ---------*/
 .card-body {
   margin: 0.2rem !important;
   padding: 0.1rem !important;
@@ -150,31 +136,88 @@ p {
   background-color: #000080;
 }
 
-@media (max-width: 1000px) {
-  .card h6 {
-    font-size: 0.8rem;
-  }
-  .card h5 {
-    font-size: 0.8rem;
-  }
-  .card-body-button button {
-    font-size: 0.4rem;
-  }
-}
+/*---------Card-media---------*/
 
-@media (max-width: 570px) {
+@media (max-width: 1100px) {
   .card {
     width: 80%;
     display: flex;
+    justify-content: center;
   }
 
   .card h6 {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   .card h5 {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   .card-body-button button {
-    font-size: 1rem;
+    font-size: 0.5rem;
+  }
+}
+
+
+@media (max-width: 700px) {
+  .card {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .card h6 {
+    font-size: 0.6rem;
+  }
+  .card h5 {
+    font-size: 0.6rem;
+  }
+  .card-body-button button {
+    font-size: 0.3rem;
+  }
+}
+
+
+@media (max-width: 580px) {
+  .card-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card h6 {
+    font-size: 0.8rem;
+  }
+  .card h5 {
+    font-size: 0.8rem;
+  }
+  .card-body-button button {
+    font-size: 0.8rem;
+  }
+}
+
+/*---------Bannerx3-media---------*/
+
+@media (min-width: 1100px) {
+ 
+  .section-banner .card {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (max-width: 1250px) {
+  .card-img-overlay h5 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .section-banner .card {
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+  }
+  .card-img-overlay h5 {
+    font-size: 2.5rem;
   }
 }

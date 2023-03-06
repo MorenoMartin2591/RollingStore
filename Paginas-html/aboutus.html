@@ -11,8 +11,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
   <link rel="shortcut icon" href="/Multimedia/img-about/Logo Ecommerce.png" type="image/x-icon" />
   <link rel="stylesheet" href="/CSS/aboutus.css" />
-  <link rel="stylesheet" type="text/css" href="./CSS/index.css" />
-  <link rel="stylesheet" href="/CSS/nav-footer.css">
+  <link rel="stylesheet" type="text/css" href="../CSS/index.css" />
+  <link rel="stylesheet" href="../CSS/nav-footer.css">
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300&family=Oswald:wght@200;300;400;500;600&family=Roboto:wght@100;300;400;500;700;900&family=Rye&display=swap"
     rel="stylesheet" />
@@ -26,9 +26,9 @@
     <!--Navbar Superior-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-danger m-1">
       <div class="container-fluid navbar-sup">
-        <div class="col-4">
+        <div class="col col-md-3">
           <a href="../index.html" class="m-3">
-            <img src="/Multimedia/img-about/Logo Ecommerce.png" class="imgLogo" alt="" width="50" height="50" />
+            <img src="../Multimedia/img-about/Logo Ecommerce.png" class="imgLogo" alt="" width="50" height="50" />
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -37,7 +37,7 @@
           </button>
         </div>
 
-        <div class="collapse navbar-collapse col-4" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse col col-md-3" id="navbarSupportedContent">
           <form class="d-flex col-12">
             <input class="form-control me-2 w-75" type="search" placeholder="Buscar producto" aria-label="Search" />
             <button class="btn btn-success" type="submit">
@@ -46,13 +46,13 @@
           </form>
         </div>
 
-        <div class="col-4">
+        <div class="col-5 col-md-5 col-sm-8">
           <ul class="list">
             <li class="nav-item">
-              <a href="./login.html">Inicio</a>
+              <a href="../Paginas-html/login.html">Inicio</a>
             </li>
             <li class="nav-item">
-              <a href="./login.html">Registro</a>
+              <a href="../Paginas-html/login.html">Registro</a>
             </li>
             <li class="nav-item">
               <a href="#">Carrito</a>
@@ -64,31 +64,29 @@
     <!--NavbaR Superior-->
 
     <!--Navbar Inferior-->
-    <nav class="navbar-inf navbar-expand-lg m-1">
+    <nav class="navbar-inf navbar-expand-sm m-1">
       <div class="container-fluid">
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav fs-5">
-            <li class="fs-5">
-              <img src="/Multimedia/img-nav-footer/celu.svg" style="height: 5rem;" alt="" />
-              <a class="dropdown-item text-white" href="./catalogosamsung.html">Samsung</a>
-            </li>
-            <li class="fs-5">
-              <img src="/Multimedia/img-nav-footer/celu.svg" style="height: 5rem;" alt="" />
-              <a class="dropdown-item text-white" href="./catalogoxiaomi.html">Xiaomi</a>
-            <li class="fs-5">
-              <img src="/Multimedia/img-nav-footer/celu.svg" style="height: 5rem;" alt="" />
-              <a class="dropdown-item text-white" href="./catalogomotorola.html">Motorolla</a>
-            </li>
-            <li class="fs-5">
-              <img src="/Multimedia/img-nav-footer/gadget.svg" style="height: 5rem;" alt="" />
-              <a class="dropdown-item text-white" href="./catalogoaccesorios.html">Accesorios</a>
-            </li>
-            <li class="fs-5">
-              <img src="/Multimedia/img-nav-footer/celu.svg" style="height: 5rem;" alt="" />
-              <a class="dropdown-item text-white" href="./aboutus.html">Acerca de nosotros</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="navbar-nav">
+          <li class="fs-6">
+            <img src="/Multimedia/img-nav-footer/celu.svg" />
+            <a class="dropdown-item text-white" href="../Paginas-html/catalogosamsung.html">Samsung</a>
+          </li>
+          <li class="fs-6 ">
+            <img src="/Multimedia/img-nav-footer/celu.svg" />
+            <a class="dropdown-item text-white" href="../Paginas-html/catalogoxiaomi.html">Xiaomi</a>
+          <li class="fs-6">
+            <img src="/Multimedia/img-nav-footer/celu.svg" />
+            <a class="dropdown-item text-white" href="../Paginas-html/catalogomotorola.html">Motorolla</a>
+          </li>
+          <li class="fs-6 ">
+            <img src="/Multimedia/img-nav-footer/gadget.svg" />
+            <a class="dropdown-item text-white" href="../Paginas-html/catalogoaccesorios.html">Accesorios</a>
+          </li>
+          <li class="fs-6">
+            <img src="/Multimedia/img-nav-footer/celu.svg" />
+            <a class="dropdown-item text-white" href="../Paginas-html/aboutus.html">Acerca de nosotros</a>
+          </li>
+        </ul>
       </div>
     </nav>
     <!--Navbar Inferior-->

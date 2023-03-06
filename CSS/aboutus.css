@@ -1,3 +1,4 @@
+/*---------General---------*/
 * {
   margin: 0;
   padding: 0;
@@ -24,12 +25,21 @@ body {
   backdrop-filter: blur(3px);
 }
 
+
+/*---------Banner-titulo---------*/
+
 .contenedor-titulo {
   position: relative;
   height: 30vh;
   background-image: url(/Multimedia/img-about/banner.jpg);
   background-size: cover;
   background-position: center;
+}
+
+@media (max-width: 2000px) {
+  .contenedor-titulo{
+    height: 10rem;
+  }
 }
 
 .title {
@@ -43,10 +53,11 @@ body {
   font-family: "Titulos";
 }
 
+/*---------Banner-alumnos---------*/
 .contenedor-banners {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 4rem;
+  margin-left: 2rem;
   justify-content: center;
   max-width: 90%;
 }
@@ -80,7 +91,7 @@ body {
 }
 
 .banner img {
-  max-width: 17rem;
+  max-width: 14rem;
   margin: auto;
   border: 5px solid transparent;
   background-color: rgba(255, 255, 255, 0.6);
@@ -125,7 +136,6 @@ img:hover {
 }
 
 .banner-text {
-  margin: 2rem 2rem 2rem 2rem;
   padding: auto;
   font-size: 1.5rem;
   font-family: "texto" !important;
@@ -135,6 +145,9 @@ img:hover {
 .banner:nth-child(even) img {
   float: right;
 }
+
+
+/*---------Banner-alumnos-media---------*/
 
 @media (max-width: 768px) {
   .banner img {
@@ -150,10 +163,37 @@ img:hover {
 }
 
 @media (max-width: 1290px) {
-  body {
-    background-image: url(/Multimedia/img-about/background-main2.jpg);
-    background-size: cover;
-    height: 100vh;
-    background-attachment: fixed;
+  .banner-text {
+    font-size: 1.3rem;
+  }
+  .banner {
+    width: 60rem;
   }
 }
+
+@media (max-width: 950px) {
+  .banner-text {
+    font-size: 1.2rem;
+  }
+  .banner {
+    width: 55rem;
+    height: auto;
+  }
+  .banner img{
+    height: auto;
+}
+}
+
+@media (max-width: 550px) {
+  .banners{
+    display: flex;
+    flex-direction: column;
+    align-items: center;}
+
+    .banner img {
+      height: auto;
+      max-width: 26rem
+    }
+    
+}
+
