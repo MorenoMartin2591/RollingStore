@@ -65,9 +65,9 @@ const tbody = document.querySelector(".card-group");
 /*Recorro el array y genero un documento a insertar en el html*/
 productos.forEach((producto) => {
   tbody.innerHTML += `
-  <div class="card m-4 rounded-1">
+  <div class="card m-1 rounded-1">
   <img src=${producto.image}
-    alt="...">
+  class="card-img-top border-bottom " alt="...">
   <div class="card-body">
     <h5 class="card-title text-center">Celular Libre ${producto.marca} ${producto.modelo}</h5>
   </div>
@@ -100,9 +100,9 @@ function borrarProducto(id) {
   tbody.innerHTML = "";
   productos.forEach((producto) => {
     tbody.innerHTML += `
-  <div class="card m-4 rounded-1">
+    <div class="card m-1 rounded-1">
   <img src=${producto.image}
-    alt="...">
+  class="card-img-top border-bottom " alt="...">
   <div class="card-body">
     <h5 class="card-title text-center">Celular Libre ${producto.marca} ${producto.modelo}</h5>
   </div>
@@ -158,9 +158,9 @@ function editarProducto(id) {
     tbody.innerHTML = "";
     productos.forEach((producto) => {
       tbody.innerHTML += `
-      <div class="card m-4 rounded-1">
+      <div class="card m-1 rounded-1">
       <img src=${producto.image}
-        alt="...">
+      class="card-img-top border-bottom " alt="...">
       <div class="card-body">
         <h5 class="card-title text-center">Celular Libre ${producto.marca} ${producto.modelo}</h5>
       </div>
@@ -178,8 +178,8 @@ function editarProducto(id) {
         <h6 class="card-title text-center">6 cuotas sin interes de $5.999,83</h6>
       </div>
       <div class="card-body-button d-flex justify-content-evenly p-1">
-        <button class="button-editar btm btn-sm data-id="${producto.id}" onclick="editarProducto(${producto.id})">Editar</button></td>
-        <button class="button-borrar btm btn-sm data-id="${producto.id}" onclick="borrarProducto(${producto.id})">Borrar</button></td>
+        <button type="button" class="btn btn-primary col-5" data-id="${producto.id}" onclick="editarProducto(${producto.id})">Editar</button>
+        <button type="button" class="btn btn-primary col-5" data-id="${producto.id}" onclick="borrarProducto(${producto.id})">Borrar</button>
       </div>
     </div>
         `;
@@ -204,9 +204,9 @@ buttonAgregar.addEventListener("click", () => {
   tbody.innerHTML = "";
     productos.forEach((producto) => {
   tbody.innerHTML += `
-  <div class="card m-4 rounded-1">
+  <div class="card m-1 rounded-1">
   <img src=${producto.image}
-    alt="...">
+  class="card-img-top border-bottom " alt="...">
   <div class="card-body">
     <h5 class="card-title text-center">Celular Libre ${producto.marca} ${producto.modelo}</h5>
   </div>
