@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/registrarse.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-box">
+        <h1 id="titulo">Registrarse</h1>
+        <form id="form" action="/">
+          <div class="input-group">
+            <p id="error"></p>
+            <div class="input-field" id="emailField">
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="Correo Electronico"
+              />
+            </div>
+            <div class="input-field">
+              <input
+                id="username"
+                name="username"
+                type="text"
+                placeholder="Nombre de Usuario"
+              />
+            </div>
+            <div class="input-field">
+              <input
+                id="password"
+                name="password"
+                type="password"
+                placeholder="Contraseña"
+              />
+            </div>
+            <div class="input-field" id="repPassword">
+              <input
+                id="password2"
+                name="password2"
+                type="password"
+                placeholder="Repetir Contraseña"
+              />
+            </div>
+            <p>¿Ya tienes cuenta? <a href="login.html">Inicia Sesion</a></p>
+          </div>
+          <!-- Registrarse esta sujeto a cambios para agregar mas o menos requisitos -->
+          <button type="submit" id="registrarseBtn">Registrarse</button>
+        </form>
+      </div>
+    </div>
+    <script src="../JS/registrarse.js"></script>
+  </body>
+</html>
