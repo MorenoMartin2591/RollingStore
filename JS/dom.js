@@ -89,6 +89,22 @@ const productos = [
   // },
 ];
 
+//Funcion para Guardar en LocalStorage//
+
+function guardarProductoslocal() {
+  const json = JSON.stringify(productos);
+  localStorage.setItem("productosLocal", json);
+}
+
+guardarProductoslocal();
+
+function leerProductoslocal() {
+  const itemLocal = JSON.parse(localStorage.getItem("productosLocal"));
+  console.log(itemLocal);
+}
+
+leerProductoslocal();
+
 /*Capturamos el elemento de la tabla*/
 
 const tbody = document.querySelector("tbody");
