@@ -7,6 +7,10 @@ const btnAbrirModal = document.querySelector("#btn-open-modal");
 const btnCerrarModal = document.querySelector("#btn-cerra-modal");
 const modal = document.querySelector("#modal");
 
+//Usuario ADMIN//
+const admin = { text: "admin@x.com", password: "admin@1234" };
+const localToken = "tokenadmin";
+
 // Validacion
 form.addEventListener("submit", (element) => {
   let messages = [];
@@ -26,6 +30,14 @@ form.addEventListener("submit", (element) => {
     errorElement.innerText = messages.join(", ");
   }
 });
+//Submit//
+form.onsubmit = (event) => {
+  event.preventDefault();
+  if (text.value == admin.text && password.value == admin.password) {
+    localStorage.setItem("token", JSON.stringify(localToken));
+    window.location.href = "index.html";
+  }
+};
 
 // modal
 

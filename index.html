@@ -9,6 +9,7 @@
 
   <link rel="stylesheet" type="text/css" href="./CSS/index.css" />
   <link rel="stylesheet" href="/CSS/nav-footer.css">
+  <link rel="stylesheet" href="/CSS/login.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
 
@@ -42,7 +43,8 @@
         <div class="col-5 col-md-5 col-sm-8">
           <ul class="list">
             <li class="nav-item">
-              <a href="./Paginas-html/login.html">Inicio</a>
+              <button type="button" data-bs-toggle="modal" data-bs-target="#miModal">Iniciar sesión</button>
+
             </li>
             <li class="nav-item">
               <a href="./Paginas-html/login.html">Registro</a>
@@ -56,6 +58,35 @@
     </nav>
     <!--NavbaR Superior-->
 
+    <!-- Ventana Modal -->
+    <div class="modal fade" id="miModal" tabindex="-1" aria-labelledby="miModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="form-box">
+            <h1 id="titulo">Acceso</h1>
+            <form id="form" action="/" method="dialog">
+              <div class="input-group">
+                <p id="error"></p>
+                <div class="input-field">
+                  <input type="text" placeholder="Nombre de Usuario" id="text" />
+                </div>
+                <div class="input-field">
+                  <input type="password" placeholder="Contraseña" id="password" />
+                </div>
+
+                <p>Contraseña Perdida <a href="#">Haz click aqui!</a></p>
+                <p>
+                  ¿No tienes cuenta? <a href="registrarse.html">Creala aqui!</a>
+                </p>
+                <!-- Login deberia verse como una ventana modal, mientras que registrarse seria una pagina -->
+              </div>
+              <button type="submit" id="acceder">Acceder</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fin Ventana Modal -->
     <!--Navbar Inferior-->
     <nav class="navbar-inf navbar-expand-sm m-1">
       <div class="container-fluid">
@@ -494,11 +525,11 @@
           </li>
           <li class="col-2 m-2">
             <a class="dropdown-item text-white" href="./Paginas-html/error404.html"><img
-                src="/Multimedia/img-nav-footer/whatsapp-logo-2.png"  alt="" />Whatsapp</a>
+                src="/Multimedia/img-nav-footer/whatsapp-logo-2.png" alt="" />Whatsapp</a>
           </li>
           <li class="col-2 m-2">
             <a class="dropdown-item text-white" href="./Paginas-html/error404.html"> <img
-                src="/Multimedia/img-nav-footer/Twitter-logo.png"  alt="" />Twitter</a>
+                src="/Multimedia/img-nav-footer/Twitter-logo.png" alt="" />Twitter</a>
           </li>
         </ul>
       </div>
@@ -511,6 +542,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>
+  <script src="/JS/login.js"></script>
   <!-- FIN SCRIPTS -->
 </body>
 
