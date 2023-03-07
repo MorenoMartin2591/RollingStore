@@ -1,20 +1,44 @@
 const productos = [
-  { id: 01, tipo: "Celular", marca: "Motorola", modelo: "E32", precio: 46.045 },
-  { id: 02, tipo: "Celular", marca: "Motorola", modelo: "E22", precio: 46.045 },
+  {
+    id: 01,
+    tipo: "Celular",
+    marca: "Motorola",
+    modelo: "E32",
+    precio: 46.045,
+    imagen: "./Multimedia/img-section/Celulares/Motorola/moto_E32.webp",
+  },
+  {
+    id: 02,
+    tipo: "Celular",
+    marca: "Motorola",
+    modelo: "E22",
+    precio: 46.045,
+    imagen: "./Multimedia/img-section/Celulares/Motorola/motorola_E22.webp",
+  },
   {
     id: 03,
     tipo: "Celular",
     marca: "Motorola",
     modelo: "E22i",
     precio: 42.542,
+    imagen: "./Multimedia/img-section/Celulares/Motorola/motorola-e22i.webp",
   },
-  { id: 04, tipo: "Celular", marca: "Motorola", modelo: "EG32", precio: 70.57 },
+  {
+    id: 04,
+    tipo: "Celular",
+    marca: "Motorola",
+    modelo: "EG32",
+    precio: 70.57,
+    imagen:
+      "./Multimedia/img-section/Celulares/Motorola/motorola_Egge_30_NEO.webp",
+  },
   // {
   //   id: 05,
   //   tipo: "Celular",
   //   marca: "Samsung",
   //   modelo: "Galaxy A03",
   //   precio: 42.542,
+  //   imagen:"./Multimedia/img-section/Celulares/Samsung/samsung_galaxy_A03_CORE.jpg"
   // },
   // {
   //   id: 06,
@@ -22,6 +46,7 @@ const productos = [
   //   marca: "Samsung",
   //   modelo: "Galaxy A53",
   //   precio: 150.149,
+  //   imagen:"./Multimedia/img-section/Celulares/Samsung/samsung_galaxy_A53.jpg"
   // },
   // {
   //   id: 07,
@@ -29,6 +54,7 @@ const productos = [
   //   marca: "Samsung",
   //   modelo: "Galaxy A22",
   //   precio: 83.583,
+  //   imagen:"./Multimedia/img-section/Celulares/Samsung/samsung_galaxy_A22_5G.jpg"
   // },
   // {
   //   id: 08,
@@ -36,56 +62,7 @@ const productos = [
   //   marca: "Samsung",
   //   modelo: "Galaxy A13",
   //   precio: 56.055,
-  // },
-  // {
-  //   id: 09,
-  //   tipo: "Celular",
-  //   marca: "Xiaomi",
-  //   modelo: "11T Pro",
-  //   precio: 299.999,
-  // },
-  // { id: 10, tipo: "Celular", marca: "Xiaomi", modelo: "11T", precio: 256.999 },
-  // {
-  //   id: 11,
-  //   tipo: "Celular",
-  //   marca: "Xiaomi",
-  //   modelo: "Readmi Note 11",
-  //   precio: 162.999,
-  // },
-  // {
-  //   id: 12,
-  //   tipo: "Accesorios",
-  //   marca: "Xiaomi",
-  //   modelo: "Kit Cámara Xiaomi 4K",
-  //   precio: 145.999,
-  // },
-  // {
-  //   id: 13,
-  //   tipo: "Accesorios",
-  //   marca: "Xiaomi",
-  //   modelo: "Auriculares Inalambricos Xiaomi Buds 3T",
-  //   precio: 72.099,
-  // },
-  // {
-  //   id: 14,
-  //   tipo: "Accesorios",
-  //   marca: "Xiaomi",
-  //   modelo: "Cargador Inalámbrico 20W",
-  //   precio: 29.299,
-  // },
-  // {
-  //   id: 15,
-  //   tipo: "Accesorios",
-  //   marca: "Samsung",
-  //   modelo: "Auriculares Samsung Galaxy Pro",
-  //   precio: 31.999,
-  // },
-  // {
-  //   id: 16,
-  //   tipo: "Accesorios",
-  //   marca: "Samsung",
-  //   modelo: "Smart Watch Samsung Galaxy 40 MM",
-  //   precio: 29.119,
+  //   imagen:"./Multimedia/img-section/Celulares/Samsung/samsung_galaxy_A13_64GB.jpg",
   // },
 ];
 
