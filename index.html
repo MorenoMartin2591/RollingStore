@@ -44,11 +44,13 @@
         <div class="col-5 col-md-5 col-sm-8">
           <ul class="list">
             <li class="nav-item">
-              <button type="button" data-bs-toggle="modal" data-bs-target="#miModal">Iniciar sesión</button>
-
+              <button type="button" class="btn btn-success btn-lg" data-bs-toggle="modal"
+                data-bs-target="#miModal">Iniciar
+                sesión</button>
             </li>
             <li class="nav-item">
-              <button type="button" data-bs-toggle="modal" data-bs-target="#btn-open-modal-registro">Registrarse</a>
+              <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
+                data-bs-target="#btn-open-modal-registro">Registrarse</a>
             </li>
           </ul>
         </div>
@@ -96,14 +98,14 @@
         <div class="modal-content">
           <div class="form-box">
             <h1 id="titulo">Acceso</h1>
-            <form id="form" action="/" method="dialog">
+            <form id="loginForm" action="/" method="dialog">
               <div class="input-group">
                 <p id="error"></p>
                 <div class="input-field">
-                  <input type="text" placeholder="Nombre de Usuario" id="text" />
+                  <input type="text" placeholder="Nombre de Usuario" id="exampleInputEmail1" />
                 </div>
                 <div class="input-field">
-                  <input type="password" placeholder="Contraseña" id="password" />
+                  <input type="password" placeholder="Contraseña" id="exampleInputPassword1" />
                 </div>
 
                 <p>Contraseña Perdida <a href="/Paginas-html/error404.html">Haz click aqui!</a></p>
@@ -112,7 +114,7 @@
                 </p>
                 <!-- Login deberia verse como una ventana modal, mientras que registrarse seria una pagina -->
               </div>
-              <button type="submit" id="acceder">Acceder</button>
+              <button type="submit" class="btn btn-primary" id="botonSubmit">Acceder</button>
             </form>
           </div>
         </div>
