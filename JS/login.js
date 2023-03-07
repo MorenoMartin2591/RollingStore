@@ -22,7 +22,7 @@ registro.onsubmit = (e) => {
     password.value === adminUser.password
   ) {
     localStorage.setItem("token", JSON.stringify(localToken));
-    window.location.href = "admin_carrito.html";
+    window.location.href = "index-admin.html";
   } else if (
     email.value === compraUser.email &&
     password.value === compraUser.password

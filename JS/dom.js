@@ -13,7 +13,7 @@ const productos = [
     marca: "Motorola",
     modelo: "E22",
     precio: 46.045,
-    imagen: "./Multimedia/img-section/Celulares/Motorola/motorola_E22.webp",
+    imagen: "./Multimedia/img-section/Celulares/Motorola/moto_E32.webp",
   },
   {
     id: 03,
@@ -21,7 +21,7 @@ const productos = [
     marca: "Motorola",
     modelo: "E22i",
     precio: 42.542,
-    imagen: "./Multimedia/img-section/Celulares/Motorola/motorola-e22i.webp",
+    imagen: "./Multimedia/img-section/Celulares/Motorola/motorola_e22i.webp",
   },
   {
     id: 04,
@@ -32,21 +32,23 @@ const productos = [
     imagen:
       "./Multimedia/img-section/Celulares/Motorola/motorola_Egge_30_NEO.webp",
   },
-  // {
-  //   id: 05,
-  //   tipo: "Celular",
-  //   marca: "Samsung",
-  //   modelo: "Galaxy A03",
-  //   precio: 42.542,
-  //   imagen:"../Multimedia/img-section/Celulares/Samsung/samsung_galaxy_A03_CORE.jpg"
-  // },
+  {
+    id: 05,
+    tipo: "Celular",
+    marca: "Samsung",
+    modelo: "Galaxy A03",
+    precio: 42.542,
+    imagen:
+      "../Multimedia/img-section/Celulares/Samsung/samsung_galaxy_A03_CORE.jpg",
+  },
   // {
   //   id: 06,
   //   tipo: "Celular",
   //   marca: "Samsung",
   //   modelo: "Galaxy A53",
   //   precio: 150.149,
-  //   imagen:"../Multimedia/img-section/Celulares/Samsung/samsung_galaxy_A53.jpg"
+  //   imagen:
+  //     "../Multimedia/img-section/Celulares/Samsung/samsung_galaxy_A53.jpg",
   // },
   // {
   //   id: 07,
@@ -54,7 +56,8 @@ const productos = [
   //   marca: "Samsung",
   //   modelo: "Galaxy A22",
   //   precio: 83.583,
-  //   imagen:"../Multimedia/img-section/Celulares/Samsung/samsung_galaxy_A22_5G.jpg"
+  //   imagen:
+  //     "../Multimedia/img-section/Celulares/Samsung/samsung_galaxy_A22_5G.jpg",
   // },
   // {
   //   id: 08,
@@ -62,7 +65,8 @@ const productos = [
   //   marca: "Samsung",
   //   modelo: "Galaxy A13",
   //   precio: 56.055,
-  //   imagen:"../Multimedia/img-section/Celulares/Samsung/samsung_galaxy_A13_64GB.jpg",
+  //   imagen:
+  //     "../Multimedia/img-section/Celulares/Samsung/samsung_galaxy_A13_64_GB.jpg",
   // },
 ];
 
