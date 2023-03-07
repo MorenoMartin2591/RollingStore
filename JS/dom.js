@@ -125,6 +125,7 @@ productos.forEach((producto) => {
 });
 
 function borrarProducto(id) {
+  let productos = JSON.parse(localStorage.getItem("productos") || {});
   const index = productos.findIndex((producto) => producto.id == id);
   productos.splice(index, 1);
   tbody.innerHTML = "";
@@ -159,6 +160,7 @@ function borrarProducto(id) {
 }
 
 function editarProducto(id) {
+  let productos = JSON.parse(localStorage.getItem("productos") || {});
   const index = productos.findIndex((producto) => producto.id == id);
   const producto = productos[index];
   const nuevoTipo = prompt(
@@ -228,6 +230,7 @@ buttonAgregar.addEventListener("click", () => {
   const precio = prompt("Ingrese el precio del producto:");
   const imagen = prompt("Ingrese URL de imagen nueva:");
 
+  let productos = JSON.parse(localStorage.getItem("productos") || {});
   const id = productos.length + 1;
   const nuevoProducto = { id, tipo, marca, modelo, precio, imagen };
   productos.push(nuevoProducto);
