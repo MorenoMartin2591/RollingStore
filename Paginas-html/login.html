@@ -2,14 +2,44 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RollingStore</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../CSS/login.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet" />
+  <title>RollingStore</title>
 </head>
+<button id="btn-open-modal">Login PopUp</button>
 
 <body>
+  <div class="container">
+    <dialog id="modal">
+      <div class="form-box">
+        <h1 id="titulo">Acceso</h1>
+        <form id="loginForm" action="/" method="dialog">
+          <div class="input-group">
+            <p id="error"></p>
+            <div class="input-field">
+              <input type="text" placeholder="Nombre de Usuario" id="exampleInputEmail1" />
+            </div>
+            <div class="input-field">
+              <input type="password" placeholder="Contraseña" id="exampleInputPassword1" />
+            </div>
 
+            <p>Contraseña Perdida <a href="#">Haz click aqui!</a></p>
+            <p>
+              ¿No tienes cuenta? <a href="registrarse.html">Creala aqui!</a>
+            </p>
+            <!-- Login deberia verse como una ventana modal, mientras que registrarse seria una pagina -->
+          </div>
+          <button type="submit" id="acceder">Acceder</button>
+        </form>
+      </div>
+    </dialog>
+  </div>
+  <script src="../JS/login.js"></script>
 </body>
 
 </html>

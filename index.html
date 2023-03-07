@@ -8,14 +8,151 @@
   <title>RollingStore</title>
 
   <link rel="stylesheet" type="text/css" href="./CSS/index.css" />
+  <link rel="stylesheet" href="/CSS/nav-footer.css">
+  <link rel="stylesheet" href="/CSS/login.css">
+  <link rel="stylesheet" href="/CSS/registrarse.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
 
 </head>
 
-<body class="conteiner-general container-fluid">
+<body class="conteiner-general">
+  <header>
+    <!--Navbar Superior-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger m-1">
+      <div class="container-fluid navbar-sup">
+        <div class="col col-md-3">
+          <a href="index.html" class="m-3">
+            <img src="/Multimedia/img-about/Logo Ecommerce.png" class="imgLogo" alt="" width="50" height="50" />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse col col-md-3" id="navbarSupportedContent">
+          <form class="d-flex col-12">
+            <input class="form-control me-2 w-75" type="search" placeholder="Buscar producto" aria-label="Search" />
+            <button class="btn btn-success" type="submit">
+              Buscar
+            </button>
+          </form>
+        </div>
+
+        <div class="col-5 col-md-5 col-sm-8">
+          <ul class="list">
+            <li class="nav-item">
+              <button type="button" class="btn btn-success btn-lg" data-bs-toggle="modal"
+                data-bs-target="#miModal">Iniciar
+                sesión</button>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
+                data-bs-target="#btn-open-modal-registro">Registrarse</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--NavbaR Superior-->
+
+    <!-- Ventana Modal Registro -->
+    <div class="modal fade" id="btn-open-modal-registro" tabindex="-1" aria-labelledby="btn-open-modal-registro"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="form-box">
+            <h1 id="titulo">Registrarse</h1>
+            <form id="form" action="/">
+              <div class="input-group">
+                <p id="error"></p>
+                <div class="input-field" id="emailField">
+                  <input id="email" name="email" type="email" placeholder="Correo Electronico" />
+                </div>
+                <div class="input-field">
+                  <input id="username" name="username" type="text" placeholder="Nombre de Usuario" />
+                </div>
+                <div class="input-field">
+                  <input id="password" name="password" type="password" placeholder="Contraseña" />
+                </div>
+                <div class="input-field" id="repPassword">
+                  <input id="password2" name="password2" type="password" placeholder="Repetir Contraseña" />
+                </div>
+                <p>¿Ya tienes cuenta? <a href="login.html">Inicia Sesion</a></p>
+              </div>
+              <!-- Registrarse esta sujeto a cambios para agregar mas o menos requisitos -->
+              <button type="submit" id="registrarseBtn">Registrarse</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fin Modal Registro -->
+
+    <!-- Ventana Modal Login -->
+    <div class="modal fade" id="miModal" tabindex="-1" aria-labelledby="miModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="form-box">
+            <h1 id="titulo">Acceso</h1>
+            <form id="loginForm" action="/" method="dialog">
+              <div class="input-group">
+                <p id="error"></p>
+                <div class="input-field">
+                  <input type="text" placeholder="Nombre de Usuario" id="exampleInputEmail1" />
+                </div>
+                <div class="input-field">
+                  <input type="password" placeholder="Contraseña" id="exampleInputPassword1" />
+                </div>
+
+                <p>Contraseña Perdida <a href="/Paginas-html/error404.html">Haz click aqui!</a></p>
+                <p>
+                  ¿No tienes cuenta? <a href="registrarse.html">Creala aqui!</a>
+                </p>
+                <!-- Login deberia verse como una ventana modal, mientras que registrarse seria una pagina -->
+              </div>
+              <button type="submit" class="btn btn-primary" id="botonSubmit">Acceder</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fin Ventana Modal Login -->
+
+    <!--Navbar Inferior-->
+    <nav class="navbar-inf navbar-expand-sm m-1">
+      <div class="container-fluid">
+        <ul class="navbar-nav">
+          <li class="fs-6">
+            <img src="/Multimedia/img-nav-footer/celu.svg" />
+            <a class="dropdown-item text-white" href="./Paginas-html/catalogosamsung.html">Samsung</a>
+          </li>
+          <li class="fs-6 ">
+            <img src="/Multimedia/img-nav-footer/celu.svg" />
+            <a class="dropdown-item text-white" href="./Paginas-html/catalogoxiaomi.html">Xiaomi</a>
+          <li class="fs-6">
+            <img src="/Multimedia/img-nav-footer/celu.svg" />
+            <a class="dropdown-item text-white" href="./Paginas-html/catalogomotorola.html">Motorolla</a>
+          </li>
+          <li class="fs-6 ">
+            <img src="/Multimedia/img-nav-footer/gadget.svg" />
+            <a class="dropdown-item text-white" href="./Paginas-html/catalogoaccesorios.html">Accesorios</a>
+          </li>
+          <li class="fs-6">
+            <img src="/Multimedia/img-nav-footer/celu.svg" />
+            <a class="dropdown-item text-white" href="./Paginas-html/aboutus.html">Acerca de nosotros</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!--Navbar Inferior-->
+  </header>
+
   <!-- INICIO DE LA SECCION PRINCIPAL-->
-  <section id="section-carrucel">
+  <section id="section-carruce">
     <div class="container-fluid">
       <!--INICIO DEL CARRUSEL-->
       <div class="slider row mb-3">
@@ -37,7 +174,7 @@
             <!--FIN DE BOTONES DEL CARRUSEL-->
 
             <!-- INICIO DE IMAGENES DEL CARRUSEL -->
-            <div class="carousel-inner">
+            <div class="carousel-inner col-lg-8 col-sm-6">
               <!--INICIO IMAGEN MERCADO PAGO-->
               <div class="carousel-item active" data-bs-interval="10000">
                 <img src="./Multimedia/img-section/Carrucel/MP.webp" class="d-block w-100" alt="..." />
@@ -45,25 +182,25 @@
               <!--FIN IMAGEN MERCADO PAGO-->
 
               <!--INICIO IMAGEN SAMSUNG-->
-              <div class="carousel-item" data-bs-interval="10000">
+              <div class="carousel-item col-lg-8 col-sm-6" data-bs-interval="10000">
                 <img src="./Multimedia/img-section/Carrucel/samsung.webp" class="d-block w-100" alt="..." />
               </div>
               <!--INICIO IMAGEN SAMSUNG-->
 
               <!--INICIO IMAGEN XIAOMI-->
-              <div class="carousel-item" data-bs-interval="10000">
+              <div class="carousel-item col-lg-8 col-sm-6" data-bs-interval="10000">
                 <img src="./Multimedia/img-section/Carrucel/xiaomi.webp" class="d-block w-100" alt="..." />
               </div>
               <!--FIN IMAGEN XIAOMI-->
 
               <!--INICIO IMAGEN MOTOROLA-->
-              <div class="carousel-item" data-bs-interval="10000">
+              <div class="carousel-item col-lg-8 col-sm-6" data-bs-interval="10000">
                 <img src="./Multimedia/img-section/Carrucel/motorola.webp" class="d-block  w-100" alt="..." />
               </div>
               <!--FIN IMAGEN MOTOROLA-->
 
               <!--INICIO IMAGEN ACCESORIOS-->
-              <div class="carousel-item" data-bs-interval="10000">
+              <div class="carousel-item col-lg-8 col-sm-6" data-bs-interval="10000">
                 <img src="./Multimedia/img-section/Carrucel/accesorios.webp" class="d-block w-100" alt="..." />
               </div>
               <!--FIN IMAGEN ACCESORIOS-->
@@ -89,15 +226,16 @@
 
 
   <!--INICIO DE SECCION CELULARES DESTACADOS-->
-  <section class="section-destacado m-3 mt-5">
+  <section class="section-novedades mt-5 container-fluid">
     <div class="section-titulo">
       <p class="text-uppercase fs-1 text-center mb-4">destacado</p>
     </div>
     <!--INICIO CARD CELULARES DESTACADOS-->
-    <div class="card-group">
+    <div class="card-group d-flex">
       <!--INICIO CARD MOTOROLA E20-->
       <div class="card m-1 rounded-1">
-        <img src="./Multimedia/img-section/Celulares/Motorola/moto E20.jpg" class="card-img-top border-bottom" alt="...">
+        <img src="./Multimedia/img-section/Celulares/Motorola/moto E20.jpg" class="card-img-top border-bottom"
+          alt="...">
         <div class="card-body">
           <h5 class="card-title text-center">Celular Libre Motorola E20</h5>
         </div>
@@ -123,8 +261,8 @@
 
       <!--INICIO CARD GALAXY A03-->
       <div class="card m-1 rounded-1">
-        <img src="./Multimedia/img-section/Celulares/Samsung/samsung galaxy A03 CORE.jpg" class="card-img-top border-bottom"
-          alt="...">
+        <img src="./Multimedia/img-section/Celulares/Samsung/samsung_galaxy_A03_CORE.jpg"
+          class="card-img-top border-bottom" alt="...">
         <div class="card-body">
           <h5 class="card-title text-center">Celular Libre Samsung Galaxy A03 Core</h5>
         </div>
@@ -150,7 +288,8 @@
 
       <!--INICIO CARD GALAXY A23-->
       <div class="card m-1 rounded-1">
-        <img src="./Multimedia/img-section/Celulares/Samsung/samsung galaxy A23.jpg" class="card-img-top border-bottom" alt="...">
+        <img src="./Multimedia/img-section/Celulares/Samsung/samsung galaxy A23.jpg" class="card-img-top border-bottom"
+          alt="...">
         <div class="card-body">
           <h5 class="card-title text-center">Celular Libre Samsung Galaxy A23</h5>
         </div>
@@ -176,7 +315,8 @@
 
       <!--INICIO CARD XIAOMI REDMI NOTE 11-->
       <div class="card m-1 rounded-1">
-        <img src="./Multimedia/img-section/Celulares/Xiaomi/xiaomi Redmi Note 11.webp" class="card-img-top border-bottom" alt="...">
+        <img src="./Multimedia/img-section/Celulares/Xiaomi/xiaomi Redmi Note 11.webp"
+          class="card-img-top border-bottom" alt="...">
         <div class="card-body">
           <h5 class="card-title text-center">Celular Libre Xiaomi Redmi Note</h5>
         </div>
@@ -211,21 +351,24 @@
     </div>
 
     <div class="container-fluid">
-      <div class="row">
-        <div class="card text-white col col-4">
-          <img src="./Multimedia/img-section/Celulares/Banner/celu5g.webp" class="card-img" style="height: 13rem" alt="...">
+      <div class="row d-flex justify-content-evenly">
+        <div class="m-1 card text-white col-3">
+          <img src="./Multimedia/img-section/Celulares/Banner/celu5g.webp" class="card-img" style="height: 13rem"
+            alt="...">
           <div class="card-img-overlay">
             <h5 class="card-title fw-bold">MOTOROLA</h5>
           </div>
         </div>
-        <div class="card text-white col col-4">
-          <img src="./Multimedia/img-section/Celulares/Banner/generacion-5G.jpg" class="card-img" style="height: 13rem" alt="...">
+        <div class="m-1 card text-white col-3">
+          <img src="./Multimedia/img-section/Celulares/Banner/generacion-5G.jpg" class="card-img" style="height: 13rem"
+            alt="...">
           <div class="card-img-overlay">
             <h5 class="card-title fw-bold">SAMSUNG</h5>
           </div>
         </div>
-        <div class="card text-white col col-4">
-          <img src="./Multimedia/img-section/Celulares/Banner/xiaomi5g.jpg" class="card-img" style="height: 13rem" alt="...">
+        <div class="m-1 card text-white col-3">
+          <img src="./Multimedia/img-section/Celulares/Banner/xiaomi5g.jpg" class="card-img" style="height: 13rem"
+            alt="...">
           <div class="card-img-overlay">
             <h5 class="card-title fw-bold">XIAOMI</h5>
           </div>
@@ -236,17 +379,17 @@
   </section>
   <!--FIN DE SECCION BANNERx3-->
 
-  <section class="section-novedades m-3 mt-5">
+  <section class="section-novedades mt-5 container-fluid">
     <!--INICIO DE SECCION CELULARES NOVEDADES-->
     <div class="section-titulo">
       <p class="text-uppercase fs-1 text-center mb-4">novedades</p>
     </div>
     <!--INICIO CARD CELULARES NOVEDADES-->
-    <div class="card-group">
+    <div class="card-group d-flex">
       <div class="card m-1 rounded-1">
-
         <!--INICIO CARD MOTOROLA EDGE30-->
-        <img src="./Multimedia/img-section/Celulares/Motorola/motorola Edge 30.webp" class="card-img-top border-bottom " alt="...">
+        <img src="./Multimedia/img-section/Celulares/Motorola/motorola Edge 30.webp" class="card-img-top border-bottom "
+          alt="...">
         <div class="card-body">
           <h5 class="card-title text-center">Celular Libre Motorola Edge 30</h5>
         </div>
@@ -272,7 +415,8 @@
 
       <!--INICIO CARD MOTOROLA G22-->
       <div class="card m-1 rounded-1">
-        <img src="./Multimedia/img-section/Celulares/Motorola/motorola G22.jpg" class="card-img-top border-bottom" alt="...">
+        <img src="./Multimedia/img-section/Celulares/Motorola/motorola G22.jpg" class="card-img-top border-bottom"
+          alt="...">
         <div class="card-body">
           <h5 class="card-title text-center">Celular Libre Motorola G52</h5>
         </div>
@@ -298,8 +442,8 @@
 
       <!--INICIO CARD GALAXY A13 126GB-->
       <div class="card m-1 rounded-1">
-        <img src="./Multimedia/img-section/Celulares/Samsung/samsung galaxy A13 128 GB.jpg" class="card-img-top border-bottom"
-          alt="...">
+        <img src="./Multimedia/img-section/Celulares/Samsung/samsung galaxy A13 128 GB.jpg"
+          class="card-img-top border-bottom" alt="...">
         <div class="card-body">
           <h5 class="card-title text-center">Celular Libre Samsung Galaxy A13 128GB</h5>
         </div>
@@ -325,7 +469,8 @@
 
       <!--INICIO CARD GALAXY A53-->
       <div class="card m-1 rounded-1">
-        <img src="./Multimedia/img-section/Celulares/Samsung/samsung galaxy A53.jpg" class="card-img-top border-bottom" alt="...">
+        <img src="./Multimedia/img-section/Celulares/Samsung/samsung_galaxy_A53.jpg" class="card-img-top border-bottom"
+          alt="...">
         <div class="card-body">
           <h5 class="card-title text-center">Celular Libre Samsung Galaxy A53</h5>
         </div>
@@ -358,14 +503,16 @@
   <section class="section-banner mt-5">
     <div class="container-fluid">
       <div class="row d-flex justify-content-evenly">
-        <div class="card text-white col col-5">
-          <img src="./Multimedia/img-section/Celulares/Banner/banner2.jpg" class="card-img" style="height: 13rem" alt="...">
+        <div class="card text-white col col-5 m-1">
+          <img src="./Multimedia/img-section/Celulares/Banner/banner2.jpg" class="card-img" style="height: 13rem"
+            alt="...">
           <div class="card-img-overlay">
             <p class="card-text fs-3">Todos nuestros productos cuentan con garantía de fábrica por 12 meses.</p>
           </div>
         </div>
-        <div class="card text-white col col-5">
-          <img src="./Multimedia/img-section/Celulares/Banner/banner2.jpg" class="card-img " style="height: 13rem" alt="...">
+        <div class="card text-white col col-5 m-1">
+          <img src="./Multimedia/img-section/Celulares/Banner/banner2.jpg" class="card-img " style="height: 13rem"
+            alt="...">
           <div class="card-img-overlay">
             <p class="card-text fs-3">¿No sabes que producto elegir?. Contactate con nosotros</p>
           </div>
@@ -375,10 +522,63 @@
   </section>
   <!--FIN DE SECCION BANNERx2-->
 
+  <!--INICIO DE FOOTER-->
+  <footer class="footer">
+    <h3>Todos los derechos reservados - 2023</h3>
+    <div class="iconos container-fluid d-flex justify-content-evenly">
+      <div class="footer-menu">
+        <ul>
+          <li class="col-2 m-2">
+            <a class="dropdown-item text-white" href="index.html">Inicio</a>
+          </li>
+          <li class="col-2 m-2">
+            <a class="dropdown-item text-white" href="./Paginas-html/aboutus.html">Sobre Nosotros</a>
+          </li>
+          <li class="col-2 m-2">
+            <a class="dropdown-item text-white" href="#">Contacto</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-ubicacion">
+        <ul class="footer-icons">
+          <li>
+            <p>Ubicación
+            <p>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3553.076081752743!2d-65.40737637246593!3d-27.05934632889694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94224be05e143b65%3A0x9216e72d647bf71d!2sHip%C3%B3lito%20Yrigoyen%20340%2C%20T4132BBF%20Famaill%C3%A1%2C%20Tucum%C3%A1n!5e0!3m2!1ses-419!2sar!4v1677848943752!5m2!1ses-419!2sar"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-redes">
+        <ul class="footer-icons container-fluid">
+          <li class="col-2 m-2">
+            <a class="dropdown-item text-white" href="./Paginas-html/error404.html"><img
+                src="/Multimedia/img-nav-footer/instagram.png" alt="" />Instagram</a>
+          </li>
+          <li class="col-2 m-2">
+            <a class="dropdown-item text-white" href="./Paginas-html/error404.html"><img
+                src="/Multimedia/img-nav-footer/whatsapp-logo-2.png" alt="" />Whatsapp</a>
+          </li>
+          <li class="col-2 m-2">
+            <a class="dropdown-item text-white" href="./Paginas-html/error404.html"> <img
+                src="/Multimedia/img-nav-footer/Twitter-logo.png" alt="" />Twitter</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <!--INICIO DE FOOTER-->
+
   <!-- INICIO SCRIPTS -->
+  <script src="./JS/carrito.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>
+  <script src="/JS/login.js"></script>
+  <script src="/JS/registrarse.js"></script>
   <!-- FIN SCRIPTS -->
 </body>
 
