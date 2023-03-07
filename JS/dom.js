@@ -100,13 +100,14 @@ function borrarProducto(id){
   </tr>
     `;
     const json = JSON.stringify(productos); //los transforma en string
-   localStorage.setItem('productos', json); //los sube a local storage
+    localStorage.setItem('productos', json); //los sube a local storage
   });
 }
 
-/*funcion para editar producto
+//funcion para editar producto
 
 function editarProducto(id) {
+  let productos = JSON.parse(localStorage.getItem("productos") ||{})
   const index = productos.findIndex((producto) => producto.id == id);
   const producto = productos[index];
   const nuevoTipo = prompt(
@@ -145,6 +146,8 @@ function editarProducto(id) {
     </tr>
     `;
     });
+    const json = JSON.stringify(productos); //los transforma en string
+    localStorage.setItem('productos', json); //los sube a local storage
   }
 }
 
@@ -159,6 +162,7 @@ buttonAgregar.addEventListener("click", () => {
   const precio = prompt("Ingrese el precio del producto:");
   const imagen = prompt("Ingrese la url de la imagen");
 
+  let productos = JSON.parse(localStorage.getItem("productos") ||{})
   const id = productos.length + 1;
   const nuevoProducto = {id, tipo, marca, modelo, precio, imagen};
   productos.push(nuevoProducto);
@@ -175,4 +179,6 @@ buttonAgregar.addEventListener("click", () => {
       <td><button class="button-editar btm btn-sm btn-warning" data-id="${producto.id}" onclick="editarProducto(${producto.id})">Editar</button></td>
       <td><button class="button-borrar btm btn-sm btn-danger" data-id="${producto.id}" onclick="borrarProducto(${producto.id})">Borrar</button></td>
     </tr>`})
-})*/
+    const json = JSON.stringify(productos); //los transforma en string
+    localStorage.setItem('productos', json); //los sube a local storage
+})
