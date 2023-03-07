@@ -38,7 +38,7 @@ const productos = [
   //   marca: "Samsung",
   //   modelo: "Galaxy A03",
   //   precio: 42.542,
-  //   imagen:"./Multimedia/img-section/Celulares/Samsung/samsung_galaxy_A03_CORE.jpg"
+  //   imagen:"../Multimedia/img-section/Celulares/Samsung/samsung_galaxy_A03_CORE.jpg"
   // },
   // {
   //   id: 06,
@@ -46,7 +46,7 @@ const productos = [
   //   marca: "Samsung",
   //   modelo: "Galaxy A53",
   //   precio: 150.149,
-  //   imagen:"./Multimedia/img-section/Celulares/Samsung/samsung_galaxy_A53.jpg"
+  //   imagen:"../Multimedia/img-section/Celulares/Samsung/samsung_galaxy_A53.jpg"
   // },
   // {
   //   id: 07,
@@ -54,7 +54,7 @@ const productos = [
   //   marca: "Samsung",
   //   modelo: "Galaxy A22",
   //   precio: 83.583,
-  //   imagen:"./Multimedia/img-section/Celulares/Samsung/samsung_galaxy_A22_5G.jpg"
+  //   imagen:"../Multimedia/img-section/Celulares/Samsung/samsung_galaxy_A22_5G.jpg"
   // },
   // {
   //   id: 08,
@@ -62,7 +62,7 @@ const productos = [
   //   marca: "Samsung",
   //   modelo: "Galaxy A13",
   //   precio: 56.055,
-  //   imagen:"./Multimedia/img-section/Celulares/Samsung/samsung_galaxy_A13_64GB.jpg",
+  //   imagen:"../Multimedia/img-section/Celulares/Samsung/samsung_galaxy_A13_64GB.jpg",
   // },
 ];
 
@@ -92,7 +92,7 @@ const tbody = document.querySelector(".card-group");
 productos.forEach((producto) => {
   tbody.innerHTML += `
   <div class="card m-1 rounded-1">
-  <img src="./Multimedia/img-section/Celulares/Motorola/moto E20.jpg" class="card-img-top border-bottom"
+  <img src=${producto.imagen} class="card-img-top border-bottom"
     alt="...">
   <div class="card-body">
     <h5 class="card-title text-center">Celular Libre ${producto.marca} ${producto.modelo}</h5>
@@ -124,7 +124,7 @@ function borrarProducto(id) {
   productos.forEach((producto) => {
     tbody.innerHTML += `
     <div class="card m-1 rounded-1">
-    <img src="./Multimedia/img-section/Celulares/Motorola/moto E20.jpg" class="card-img-top border-bottom"
+    <img src=${producto.imagen} 
       alt="...">
     <div class="card-body">
       <h5 class="card-title text-center">Celular Libre ${producto.marca} ${producto.modelo}</h5>
@@ -180,7 +180,7 @@ function editarProducto(id) {
     productos.forEach((producto) => {
       tbody.innerHTML += `
       <div class="card m-1 rounded-1">
-      <img src="./Multimedia/img-section/Celulares/Motorola/moto E20.jpg" class="card-img-top border-bottom"
+      <img src=${producto.imagen} 
         alt="...">
       <div class="card-body">
         <h5 class="card-title text-center">Celular Libre ${producto.marca} ${producto.modelo}</h5>
@@ -221,7 +221,7 @@ buttonAgregar.addEventListener("click", () => {
   localStorage.setItem("productosLocal", JSON.stringify(productos));
   tbody.innerHTML += `
   <div class="card m-1 rounded-1">
-  <img src="./Multimedia/img-section/Celulares/Motorola/moto E20.jpg" class="card-img-top border-bottom"
+  <img src=${producto.imagen} 
     alt="...">
   <div class="card-body">
     <h5 class="card-title text-center">Celular Libre ${producto.marca} ${producto.modelo}</h5>
