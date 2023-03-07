@@ -119,6 +119,9 @@ productos.forEach((producto) => {
   <button class="button-borrar btm btn-sm btn-danger" data-id="${producto.id}" onclick="borrarProducto(${producto.id})">Borrar</button>
   </div>
 </div>`;
+  //Subo mi array al local storage
+  const json = JSON.stringify(productos); //los transforma en string
+  localStorage.setItem("productos", json); //los sube a local storage
 });
 
 function borrarProducto(id) {
