@@ -156,6 +156,9 @@ function borrarProducto(id) {
     </div>
   </div>
     `;
+    //Subo mi array al local storage
+    const json = JSON.stringify(productos); //los transforma en string
+    localStorage.setItem("productos", json); //los sube a local storage
   });
 }
 
@@ -217,6 +220,9 @@ function editarProducto(id) {
       </div>
     </div>
       `;
+      //Subo mi array al local storage
+      const json = JSON.stringify(productos); //los transforma en string
+      localStorage.setItem("productos", json); //los sube a local storage
     });
   }
 }
@@ -263,5 +269,8 @@ buttonAgregar.addEventListener("click", () => {
   </div>
 </div>
   `;
+    //Subo mi array al local storage
+    const json = JSON.stringify(productos); //los transforma en string
+    localStorage.setItem("productos", json); //los sube a local storage
   });
 });
