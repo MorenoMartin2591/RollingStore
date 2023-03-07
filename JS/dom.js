@@ -96,7 +96,7 @@ const tbody = document.querySelector(".card-group");
 productos.forEach((producto) => {
   tbody.innerHTML += `
   <div class="card m-1 rounded-1">
-  <img src=${producto.imagen} class="card-img-top border-bottom"
+  <img src=${producto.imagen} style="max-height: auto;" class="card-img-top border-bottom"
     alt="...">
   <div class="card-body">
     <h5 class="card-title text-center">Celular Libre ${producto.marca} ${producto.modelo}</h5>
@@ -115,8 +115,8 @@ productos.forEach((producto) => {
     <h6 class="card-title text-center">6 cuotas sin interes de $5.999,83</h6>
   </div>
   <div class="card-body-button d-flex justify-content-evenly p-1">
-    <button type="button" class="btn btn-primary col-5">COMPRAR</button>
-    <button type="button" class="btn btn-secondary col-5">VER</button>
+  <button class="button-editar btm btn-sm btn-warning" data-id="${producto.id}" onclick="editarProducto(${producto.id})">Editar</button>
+  <button class="button-borrar btm btn-sm btn-danger" data-id="${producto.id}" onclick="borrarProducto(${producto.id})">Borrar</button>
   </div>
 </div>`;
 });
@@ -128,7 +128,7 @@ function borrarProducto(id) {
   productos.forEach((producto) => {
     tbody.innerHTML += `
     <div class="card m-1 rounded-1">
-    <img src=${producto.imagen} 
+    <img src=${producto.imagen} style="max-height: auto;"
       alt="...">
     <div class="card-body">
       <h5 class="card-title text-center">Celular Libre ${producto.marca} ${producto.modelo}</h5>
@@ -147,8 +147,8 @@ function borrarProducto(id) {
       <h6 class="card-title text-center">6 cuotas sin interes de $5.999,83</h6>
     </div>
     <div class="card-body-button d-flex justify-content-evenly p-1">
-      <button type="button" class="btn btn-primary col-5">COMPRAR</button>
-      <button type="button" class="btn btn-secondary col-5">VER</button>
+    <button class="button-editar btm btn-sm btn-warning" data-id="${producto.id}" onclick="editarProducto(${producto.id})">Editar</button>
+    <button class="button-borrar btm btn-sm btn-danger" data-id="${producto.id}" onclick="borrarProducto(${producto.id})">Borrar</button>
     </div>
   </div>
     `;
@@ -170,21 +170,25 @@ function editarProducto(id) {
   const nuevoPrecio = prompt(
     `Ingrese el nuevo precio (anterior: ${producto.precio}):`
   );
+  const nuevoImg = prompt(
+    `Ingrese la nueva imagen (URL) (anterior: ${producto.imagen}):`
+  );
 
-  if (nuevoTipo || nuevaMarca || nuevoModelo || nuevoPrecio) {
+  if (nuevoTipo || nuevaMarca || nuevoModelo || nuevoPrecio || nuevoImg) {
     productos[index] = {
       id: id,
       tipo: nuevoTipo || producto.tipo,
       marca: nuevaMarca || producto.marca,
       modelo: nuevoModelo || producto.modelo,
       precio: nuevoPrecio || producto.precio,
+      imagen: nuevoImg || producto.imagen,
     };
 
     tbody.innerHTML = "";
     productos.forEach((producto) => {
       tbody.innerHTML += `
       <div class="card m-1 rounded-1">
-      <img src=${producto.imagen} 
+      <img src=${producto.imagen} style="max-height: auto;"
         alt="...">
       <div class="card-body">
         <h5 class="card-title text-center">Celular Libre ${producto.marca} ${producto.modelo}</h5>
@@ -203,8 +207,8 @@ function editarProducto(id) {
         <h6 class="card-title text-center">6 cuotas sin interes de $5.999,83</h6>
       </div>
       <div class="card-body-button d-flex justify-content-evenly p-1">
-        <button type="button" class="btn btn-primary col-5">COMPRAR</button>
-        <button type="button" class="btn btn-secondary col-5">VER</button>
+      <button class="button-editar btm btn-sm btn-warning" data-id="${producto.id}" onclick="editarProducto(${producto.id})">Editar</button>
+      <button class="button-borrar btm btn-sm btn-danger" data-id="${producto.id}" onclick="borrarProducto(${producto.id})">Borrar</button>
       </div>
     </div>
       `;
@@ -219,13 +223,17 @@ buttonAgregar.addEventListener("click", () => {
   const marca = prompt("Ingrese la marca del producto:");
   const modelo = prompt("Ingrese el modelo del producto:");
   const precio = prompt("Ingrese el precio del producto:");
+  const imagen = prompt("Ingrese URL de imagen nueva:");
+
   const id = productos.length + 1;
-  const nuevoProducto = { id, tipo, marca, modelo, precio };
+  const nuevoProducto = { id, tipo, marca, modelo, precio, imagen };
   productos.push(nuevoProducto);
   localStorage.setItem("productosLocal", JSON.stringify(productos));
-  tbody.innerHTML += `
+  tbody.innerHTML = "";
+  productos.forEach((producto) => {
+    tbody.innerHTML += `
   <div class="card m-1 rounded-1">
-  <img src=${producto.imagen} 
+  <img src=${producto.imagen} style="max-height: auto;"
     alt="...">
   <div class="card-body">
     <h5 class="card-title text-center">Celular Libre ${producto.marca} ${producto.modelo}</h5>
@@ -244,9 +252,10 @@ buttonAgregar.addEventListener("click", () => {
     <h6 class="card-title text-center">6 cuotas sin interes de $5.999,83</h6>
   </div>
   <div class="card-body-button d-flex justify-content-evenly p-1">
-    <button type="button" class="btn btn-primary col-5">COMPRAR</button>
-    <button type="button" class="btn btn-secondary col-5">VER</button>
+  <button class="button-editar btm btn-sm btn-warning" data-id="${producto.id}" onclick="editarProducto(${producto.id})">Editar</button>
+  <button class="button-borrar btm btn-sm btn-danger" data-id="${producto.id}" onclick="borrarProducto(${producto.id})">Borrar</button>
   </div>
 </div>
   `;
+  });
 });
